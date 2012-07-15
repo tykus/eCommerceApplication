@@ -14,7 +14,7 @@
 
 <p>
   <b>Unit price:</b>
-  €<%= @product.unit_price %>
+  <%= number_to_currency(@product.unit_price, :unit=>'€') %>
 </p>
 <p>
   <b>Colour:</b>
@@ -37,6 +37,6 @@
 </p>
 
 
-<%= link_to image_tag('edit.png', :alt => "Edit") + "Edit", edit_product_path(@product) %>
+<%= link_to image_tag('edit.png', :alt => "Edit"), edit_product_path(@product) %>
 <br />
-<%= link_to image_tag('back.png', :alt => "Back") + "Back", products_path %>
+<%= link_to image_tag('back.png', :alt => "Back"), products_path %>

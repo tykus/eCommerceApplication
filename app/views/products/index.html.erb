@@ -27,10 +27,10 @@
 
 <% @products.each do |product| %>
   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-    <td><%= image_tag(product.picture, class: 'thumb')%></td>
+    <td class="thumb"><%= image_tag(product.picture)%></td>
     <td><%= product.product_name %></td>
     <td><%= product.description %></td>
-    <td>€<%= product.unit_price %></td>
+    <td><%= number_to_currency(product.unit_price,:unit=>'€') %></td>
     <td><%= product.colour %></td>
     <td><%= product.size %></td>
     <td><%= product.gender %></td>

@@ -116,10 +116,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/399.jpg" afterPath="$PROJECT_DIR$/public/images/399.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/400.jpg" afterPath="$PROJECT_DIR$/public/images/400.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/add.png" afterPath="$PROJECT_DIR$/public/images/add.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/back.png" afterPath="$PROJECT_DIR$/public/images/back.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/background.jpg" afterPath="$PROJECT_DIR$/public/images/background.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/delete.png" afterPath="$PROJECT_DIR$/public/images/delete.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/edit.png" afterPath="$PROJECT_DIR$/public/images/edit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/f.png" afterPath="$PROJECT_DIR$/public/images/f.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/header.png" afterPath="$PROJECT_DIR$/public/images/header.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/m.png" afterPath="$PROJECT_DIR$/public/images/m.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/n.png" afterPath="$PROJECT_DIR$/public/images/n.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/show.png" afterPath="$PROJECT_DIR$/public/images/show.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
@@ -182,14 +186,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="57" selection-start="527" selection-end="527" vertical-scroll-proportion="-25.5">
+            <state line="16" column="26" selection-start="256" selection-end="256" vertical-scroll-proportion="0.3207547">
               <folding>
-                <marker date="1342393689000" expanded="true" signature="207:214" placeholder="..." />
-                <marker date="1342393689000" expanded="true" signature="214:263" placeholder="..." />
+                <marker date="1342395504000" expanded="true" signature="207:214" placeholder="..." />
+                <marker date="1342395504000" expanded="true" signature="214:294" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="105" selection-start="16133" selection-end="16133" vertical-scroll-proportion="-5.814815">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -203,14 +216,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="22" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5188679">
+            <state line="34" column="62" selection-start="954" selection-end="954" vertical-scroll-proportion="-20.192308">
               <folding>
-                <marker date="1342392029000" expanded="true" signature="352:434" placeholder="..." />
-                <marker date="1342392029000" expanded="true" signature="596:1340" placeholder="do ... end" />
-                <marker date="1342392029000" expanded="true" signature="810:1332" placeholder="..." />
+                <marker date="1342395371000" expanded="true" signature="352:434" placeholder="..." />
+                <marker date="1342395371000" expanded="true" signature="596:1368" placeholder="do ... end" />
+                <marker date="1342395371000" expanded="true" signature="808:1360" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -259,8 +272,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/show.html.erb" />
       </list>
@@ -749,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="22713" selection-end="22713" vertical-scroll-proportion="2.0534263">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="51" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
@@ -763,19 +769,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="57" selection-start="527" selection-end="527" vertical-scroll-proportion="-25.5">
-          <folding>
-            <marker date="1342393689000" expanded="true" signature="207:214" placeholder="..." />
-            <marker date="1342393689000" expanded="true" signature="214:263" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="2" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="105" selection-start="16133" selection-end="16133" vertical-scroll-proportion="-5.814815">
           <folding />
         </state>
       </provider>
@@ -789,11 +792,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5188679">
+        <state line="34" column="62" selection-start="954" selection-end="954" vertical-scroll-proportion="-20.192308">
           <folding>
-            <marker date="1342392029000" expanded="true" signature="352:434" placeholder="..." />
-            <marker date="1342392029000" expanded="true" signature="596:1340" placeholder="do ... end" />
-            <marker date="1342392029000" expanded="true" signature="810:1332" placeholder="..." />
+            <marker date="1342395371000" expanded="true" signature="352:434" placeholder="..." />
+            <marker date="1342395371000" expanded="true" signature="596:1368" placeholder="do ... end" />
+            <marker date="1342395371000" expanded="true" signature="808:1360" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="256" selection-end="256" vertical-scroll-proportion="0.3207547">
+          <folding>
+            <marker date="1342395504000" expanded="true" signature="207:214" placeholder="..." />
+            <marker date="1342395504000" expanded="true" signature="214:294" placeholder="..." />
           </folding>
         </state>
       </provider>
