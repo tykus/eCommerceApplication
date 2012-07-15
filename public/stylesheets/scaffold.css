@@ -1,5 +1,5 @@
 body {
-    background: url(../images/background.jpg) repeat;
+    background: url(../images/background.jpg) repeat; /* Brian made changes - 15.07.2012 */
     color: #333;
 }
 
@@ -15,9 +15,9 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; /*background-color:#000;*/ }    /* removed background color */
+a { color: #333; }
+a:visited { color: #333; }
+a:hover { color: #f60; /*background-color:#000;*/ }    /* Brian made changes - 15.07.2012 */
 
 div.field, div.actions {
   margin-bottom: 10px;
@@ -66,11 +66,12 @@ div.field, div.actions {
 /*  Styles defined by Brian */
 
 #container {
-    border: 1px solid #dcdcdc;
-    width: 900px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    padding: 20px;
+    border				: 1px solid #dcdcdc;
+    background-color	: #ffffff;
+    margin				: 0 auto;
+	overflow			: auto;
+    padding				: 20px;
+    width				: 900px;
 }
 
 #header {
@@ -80,14 +81,30 @@ div.field, div.actions {
     background-image	: url("../images/header.png");
 }
 
+#search_form {
+	float				: right;
+}
+
+.clearfix {
+	clear				: both;
+}
+
 h1,
 h2,
 h3 {
     color				: #f60;   /* Orange headers */
-
 }
 
-table .products {
+a {
+	line-height			: 32px;
+	padding-left		: 0.5em;
+	display				: block;
+	height				: 32px;
+}
+
+table .products {	
+	border-spacing		: 0;
+	border-collapse		: collapse;
 	margin				: 0 auto;
 	width				: 90%;
 }
@@ -99,6 +116,17 @@ table .products {
 
 .list_line_even {
     background-color	: #dcdcdc;
+}
+
+
+/* IMAGE STYLES */
+
+.showProduct {
+	background-color	: #ffffff;
+	border				: 1px solid #dcdcdc;
+	float				: right;
+	margin-left			: 25px;
+	padding				: 5px;
 }
 
 .thumb {

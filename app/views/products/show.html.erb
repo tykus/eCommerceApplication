@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Product name:</b>
-  <%= @product.product_name %>
+<p class="showProduct">
+  <%= image_tag(@product.picture) %>
 </p>
+<h1>
+  <%= @product.product_name %>
+</h1>
 
 <p>
   <b>Description:</b>
@@ -12,14 +14,8 @@
 
 <p>
   <b>Unit price:</b>
-  <%= @product.unit_price %>
+  €<%= @product.unit_price %>
 </p>
-
-<p>
-  <b>Picture:</b>
-  <%= @product.picture %>
-</p>
-
 <p>
   <b>Colour:</b>
   <%= @product.colour %>
@@ -41,5 +37,6 @@
 </p>
 
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to image_tag('edit.png', :alt => "Edit") + "Edit", edit_product_path(@product) %>
+<br />
+<%= link_to image_tag('back.png', :alt => "Back") + "Back", products_path %>
