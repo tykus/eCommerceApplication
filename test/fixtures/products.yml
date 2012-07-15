@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product_name: MyString
+  description: MyText
+  unit_price: 9.99
+  picture: MyString
+  colour: MyString
+  size: 1
+  gender: MyString
+  active: false
+
+two:
+  product_name: MyString
+  description: MyText
+  unit_price: 9.99
+  picture: MyString
+  colour: MyString
+  size: 1
+  gender: MyString
+  active: false
