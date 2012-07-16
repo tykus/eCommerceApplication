@@ -4,15 +4,15 @@ body {
 }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
 }
 
 pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
 }
 
 a { color: #333; }
@@ -20,42 +20,42 @@ a:visited { color: #333; }
 a:hover { color: #f60; /*background-color:#000;*/ }    /* Brian made changes - 15.07.2012 */
 
 div.field, div.actions {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #notice {
-  color: green;
+    color: green;
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+    padding: 2px;
+    background-color: red;
+    display: table;
 }
 
 #error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
 }
 
 #error_explanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  margin-bottom: 0px;
-  background-color: #c00;
-  color: #fff;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
 }
 
 #error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
+    font-size: 12px;
+    list-style: square;
 }
 
 
@@ -69,24 +69,19 @@ div.field, div.actions {
     border				: 1px solid #dcdcdc;
     background-color	: #ffffff;
     margin				: 0 auto;
-	overflow			: auto;
+    overflow			: auto;
     padding				: 20px;
     width				: 900px;
 }
 
 #header {
     width           	: 100%;
-    height          	: 200px;
+    height          	: 120px;
     background-repeat	: no-repeat;
     background-image	: url("../images/header.png");
 }
-
-#search_form {
-	float				: right;
-}
-
 .clearfix {
-	clear				: both;
+    clear				: both;
 }
 
 h1,
@@ -96,17 +91,17 @@ h3 {
 }
 
 a {
-	line-height			: 32px;
-	padding-left		: 0.5em;
-	display				: block;
-	height				: 32px;
+    line-height			: 32px;
+    padding-left		: 0.5em;
+    display				: block;
+    height				: 32px;
 }
 
-table .products {	
-	border-spacing		: 0;
-	border-collapse		: collapse;
-	margin				: 0 auto;
-	width				: 90%;
+table .products {
+    border-spacing		: 0;
+    border-collapse		: collapse;
+    margin				: 0 auto;
+    width				: 90%;
 }
 
 .list_line_odd {
@@ -118,33 +113,94 @@ table .products {
     background-color	: #dcdcdc;
 }
 
+/* MENU STYLES */
+#menu {
+    background-color	: #eee;
+    height				: 50px;
+    padding				: 0;
+    width				: 100%;
+}
+
+#menu ul {
+    list-style			: none;
+    margin-left			: -39px;
+}
+
+#menu li {
+    background-color	: #eee;
+
+}
+
+#menu li a {
+    border-right		: 1px solid #fff;
+    color				: #333;
+    display				: block;
+    height				: 50px;
+    float				: left;
+    line-height			: 50px;
+    margin-right		: 0.1em;
+    text-align			: center;
+    text-decoration		: none;
+    width				: 9em;
+}
+
+#menu li a:link,
+#menu li a:visited {
+    color				: #333;
+}
+
+#menu li a:hover {
+    background-color	: #f60;
+    color				: #eee;
+}
+
+
+/* SEARCH FIELD */
+#search_form {
+    float				: right;
+    padding				: 0 10px;
+}
+
+#search_form input {
+    border				: 1px solid #dcdcdc;
+}
+
+#search_form .button {
+    background-color	: #f60;
+    border				: 1px solid #dcdcdc;
+    color				: #ffffff;
+}
+
+#search_form .button:hover {
+    background-color	: #f90;
+}
 
 /* IMAGE STYLES */
 
 .showProduct {
-	background-color	: #ffffff;
-	border				: 1px solid #dcdcdc;
-	float				: right;
-	margin-left			: 25px;
-	padding				: 5px;
+    background-color	: #ffffff;
+    border				: 1px solid #dcdcdc;
+    float				: right;
+    margin-left			: 25px;
+    padding				: 5px;
 }
 
 .thumb {
-	display:block;
-	float:left;
-	width:100px;
-	height:100px;
-	line-height:100px;
-	overflow:hidden;
-	position:relative;
-	z-index:1;
+    display				:block;
+    float				:left;
+    width				:100px;
+    height				:100px;
+    line-height			:100px;
+    overflow			:hidden;
+    position			:relative;
+    z-index				:1;
 }
 
 .thumb img {
-	float:left;
-	position:absolute;
-	width:150px;
-	height:auto;
-	top:-25px;
-	left:-25px;	
+    float				:left;
+    position			:absolute;
+    width				:150px;
+    height				:auto;
+    top					:-25px;
+    left				:-25px;
 }

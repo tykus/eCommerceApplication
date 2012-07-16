@@ -10,8 +10,8 @@
 # Seed data for the Product model
 Product.delete_all
 Product.create(:product_name =>'Romper & Hat Set', :description => 'Baby Pink Velour Set', :unit_price => 26.95, :picture => '26.jpg', :colour => 'pink', :size => 0, :gender => 'girl', :active => true)
-Product.create(:product_name =>'Berets & Pull On', :description => 'Emile et Rose Beret & Pull on Hats. All in pastels 6.95. Sizes from tiny baby 0-1 Month to big sizes', :unit_price => 6.95, :picture => '128.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Range of hats', :description => 'We stock a fabulous range of hats Cotton Pull on hats in all colours available from 0 to 3 Months Stripe and Stocking hats in different colours also', :unit_price => 6.95, :picture => '129.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
+Product.create(:product_name =>'Berets & Pull On Hats', :description => 'Emile et Rose Beret & Pull on Hats. All in pastels 6.95. Sizes from tiny baby 0-1 Month to big sizes', :unit_price => 6.95, :picture => '128.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
+Product.create(:product_name =>'Range of Hats', :description => 'We stock a fabulous range of hats Cotton Pull on hats in all colours available from 0 to 3 Months Stripe and Stocking hats in different colours also', :unit_price => 6.95, :picture => '129.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
 Product.create(:product_name =>'Boys', :description => 'Romper, Jacket & Hat Suits Bibs, Shoes & Socks all available to match', :unit_price => 69.95, :picture => '132.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
 Product.create(:product_name =>'Premature baby', :description => 'Soft Velours', :unit_price => 19.95, :picture => '135.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
 Product.create(:product_name =>'Boys Holy Communion', :description => '2 Piece Italian Suits - Various colours available with a selection of shirts and ties to match', :unit_price => 129.95, :picture => '136.jpg', :colour => 'n/a', :size => 0, :gender => 'boy', :active => true)
@@ -102,3 +102,16 @@ Product.create(:product_name =>'Jacky', :description => 'Lemon velour top with c
 Product.create(:product_name =>'Jacky', :description => 'Rust velour top with stripe - romper to match.', :unit_price => 19.95, :picture => '398.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
 Product.create(:product_name =>'Dodi-Petto', :description => 'Camel & cream stripped velour trousers with cream velour top to match.', :unit_price => 19.95, :picture => '399.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
 Product.create(:product_name =>'Jacky', :description => 'Four piece lemon neutral set -  romper, top, jacket & hat in soft velour.', :unit_price => 49.95, :picture => '400.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
+
+
+Category.delete_all
+Category.create(:category_name => 'Layette')
+Category.create(:category_name => 'Baby Girl')
+Category.create(:category_name => 'Baby Boy')
+Category.create(:category_name => 'Baby Girl - 6 to 24 months')
+Category.create(:category_name => 'Baby Boy - 6 to 24 months')
+Category.create(:category_name => 'Christening')
+Category.create(:category_name => 'Girl - 2 to 8 years')
+Category.create(:category_name => 'Boy - 2 to 8 years')
+Category.create(:category_name => 'Boy - Holy Communion')
+Category.create(:category_name => 'Hats')
