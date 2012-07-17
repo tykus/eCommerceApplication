@@ -1,6 +1,12 @@
 class Product < ActiveRecord::Base
+  # Every product belongs to one category only
   belongs_to :category
 
+  has_attached_file :photo,
+                    :styles => {
+                        :thumb => "100x100#",
+                        :large => "400x400>"
+                    }
 
   # Validation of data begin sent to the Product model
   # We must have a product name, a description and a product image
