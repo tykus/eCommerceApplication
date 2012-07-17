@@ -11,10 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120716215822) do
+ActiveRecord::Schema.define(:version => 20120717193751) do
 
   create_table "categories", :force => true do |t|
     t.string   "category_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+  end
+
+  create_table "genders", :force => true do |t|
+    t.string   "gender"
+    t.string   "icon_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,10 +36,11 @@ ActiveRecord::Schema.define(:version => 20120716215822) do
     t.string   "picture"
     t.string   "colour"
     t.integer  "size"
-    t.string   "gender"
+    t.integer  "gender_id",          :limit => 255
     t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category_id"
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"

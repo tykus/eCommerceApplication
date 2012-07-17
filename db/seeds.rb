@@ -6,103 +6,170 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
+# Seed data for Gender model
+Gender.delete_all
+Gender.create(:gender => 'boy',
+              :icon_url => 'icons/m.png'
+)
+Gender.create(:gender => 'girl',
+              :icon_url => 'icons/f.png'
+)
+Gender.create(:gender => 'n/a',
+              :icon_url => 'icons/n.png'
+)
+
 
 # Seed data for the Product model
 Product.delete_all
-Product.create(:product_name =>'Romper & Hat Set', :description => 'Baby Pink Velour Set', :unit_price => 26.95, :picture => '26.jpg', :colour => 'pink', :size => 0, :gender => 'girl', :active => true)
-Product.create(:product_name =>'Berets & Pull On Hats', :description => 'Emile et Rose Beret & Pull on Hats. All in pastels 6.95. Sizes from tiny baby 0-1 Month to big sizes', :unit_price => 6.95, :picture => '128.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Range of Hats', :description => 'We stock a fabulous range of hats Cotton Pull on hats in all colours available from 0 to 3 Months Stripe and Stocking hats in different colours also', :unit_price => 6.95, :picture => '129.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Boys', :description => 'Romper, Jacket & Hat Suits Bibs, Shoes & Socks all available to match', :unit_price => 69.95, :picture => '132.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Premature baby', :description => 'Soft Velours', :unit_price => 19.95, :picture => '135.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Boys Holy Communion', :description => '2 Piece Italian Suits - Various colours available with a selection of shirts and ties to match', :unit_price => 129.95, :picture => '136.jpg', :colour => 'n/a', :size => 0, :gender => 'boy', :active => true)
-Product.create(:product_name =>'Boys Holy Communion', :description => 'Black 3 Piece Italian Suits - Various colours available with a selection of shirts and ties to match', :unit_price => 129.95, :picture => '137.jpg', :colour => 'n/a', :size => 0, :gender => 'boy', :active => false)
-Product.create(:product_name =>'Boys Holy Communion', :description => 'Linen 2 Piece Italian Suits - Various colours available with a selection of shirts and ties to match', :unit_price => 129.95, :picture => '138.jpg', :colour => 'n/a', :size => 0, :gender => 'boy', :active => true)
-Product.create(:product_name =>'Boys Holy Communion', :description => 'Navy 3 Piece Italian Suits - Various colours available with a selection of shirts and ties to match', :unit_price => 129.95, :picture => '139.jpg', :colour => 'n/a', :size => 0, :gender => 'boy', :active => false)
-Product.create(:product_name =>'Layette Velour', :description => 'White Velour new born baby', :unit_price => 17.95, :picture => '140.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Layette Suits', :description => 'White 4 piece velour suits (price for complete suit)', :unit_price => 34.95, :picture => '141.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Neutral New Born', :description => 'Lemon Velour 4 piece ideal for hospital', :unit_price => 34.95, :picture => '145.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Aqua 2 piece Velour', :description => 'Soft Velour in Neutral colour - for those of you still guessing....Boy or Girl?', :unit_price => 19.95, :picture => '146.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'White Velour 2 pce', :description => 'Soft Velour for the journey home from hospital!', :unit_price => 22.95, :picture => '147.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Beige & White Cotton Romper', :description => 'Cool Cotton for the warmer days!', :unit_price => 19.95, :picture => '148.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Romper & Hat Set', :description => 'Cotton baby boys set', :unit_price => 26.95, :picture => '149.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Romper & Hat Set', :description => 'Baby Girl Pink Velour 2 piece', :unit_price => 26.95, :picture => '150.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Baby Romper & Hat', :description => 'Baby Blue Velour set', :unit_price => 26.95, :picture => '151.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Romper & Hat Set', :description => 'Baby Pink Velour Set', :unit_price => 26.95, :picture => '152.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'3 piece sets', :description => 'Pink cotton girls set with booties.', :unit_price => 26.95, :picture => '153.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dress & Legging Set', :description => 'Coral stripe dress & legging set.', :unit_price => 27.95, :picture => '154.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Baby Romper & Suit', :description => 'Blue velour romper and cotton trouser set.', :unit_price => 19.95, :picture => '155.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Baby Boy Sets', :description => 'Lime & Blue cotton trouser sets.', :unit_price => 24.95, :picture => '156.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Boys Christening Romper', :description => '3 Piece with waistcoat and bow tie.', :unit_price => 69.95, :picture => '157.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Sarah Louise', :description => 'Chiffon girls robe & bonnet with hand sticth flowers.', :unit_price => 119.95, :picture => '209.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Christening', :description => 'Classic robe for baby boy or girl with celtic cross and hat.', :unit_price => 89.95, :picture => '210.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Sarah Louise', :description => 'Chiffon robe and bonnet with classic sequine.', :unit_price => 119.95, :picture => '211.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Phister & Philina', :description => 'Purple & Lime Cotton Dress & Legging. Mayoral Cardigans to compliment outfits from 13.95 in all colours', :unit_price => 49.95, :picture => '227.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Coral waisted dress with pleat effect.', :unit_price => 34.95, :picture => '266.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Pretty navy & white poka dot dress. Available in coral also.', :unit_price => 41.95, :picture => '267.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Little Darlings', :description => 'For that very special occasion, cream dress with hand stitched flowers in cerise & gold.', :unit_price => 99.95, :picture => '268.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Lavender, coral & white cotton dress. Pretty dress for your special occasion.', :unit_price => 36.95, :picture => '269.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Navy & white t-shirt dress & leggings with bow effect on shoulder.', :unit_price => 29.95, :picture => '270.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Coral cotton puffball dress with cardigan effect and leggings in Coral to match.', :unit_price => 44.95, :picture => '271.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Loff', :description => 'Puffball dress & leggings in Coral with Mayoral cardigan to match. (64.95 for set)', :unit_price => 64.95, :picture => '272.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Baby pink & white check Puffball dress with matching pink leggings. Pink cardigan to match.', :unit_price => 39.95, :picture => '277.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Little Darlings', :description => 'Cotton nautical dress with bloomers. Ideal party dress.', :unit_price => 74.95, :picture => '278.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Cotton pink & white check dress with bow.', :unit_price => 31.95, :picture => '279.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Cotton red & white party dress.', :unit_price => 31.95, :picture => '280.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Cotton long sleeve navy & white stripe dress with leggings to match.', :unit_price => 36.95, :picture => '281.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Occasion pink & white dress - available in navy / white & red / white also.', :unit_price => 31.95, :picture => '282.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Trois-Pomme', :description => 'Lime, white & pale grey cotton dress, leggings & bandana. Price for 3-piece set 34.95', :unit_price => 34.95, :picture => '283.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Sarah Louise', :description => 'Stunning girls Christening robe with rosettes & lace. Matching bonnet.', :unit_price => 119.95, :picture => '284.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Sarah Louise', :description => 'Traditional hand rooked cotton layered gown and bonnet.', :unit_price => 109.95, :picture => '286.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Sarah Louise', :description => 'Traditional cotton Christening robe with hand made rooking and bonnet.', :unit_price => 109.95, :picture => '287.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Tucha', :description => 'Unisex white coloured velour romper with velour and cotton blanket matching.', :unit_price => 26.95, :picture => '288.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'Nuetral - suitable for baby boy or girl. Lemon velour romper & blanket to match.', :unit_price => 29.95, :picture => '289.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'Baby pink & white stripe blanket. Baby romper & two piece velour to match.', :unit_price => 28.95, :picture => '290.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'Orange & lime stripe romper & available in two piece also.', :unit_price => 29.95, :picture => '291.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'New Baby Range Velour red, white & navy romper. Available in two piece suit also.', :unit_price => 29.95, :picture => '292.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Navy & White cotton sailor romper with matching hat.', :unit_price => 26.95, :picture => '293.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Girandola', :description => 'White & navy velour romper with teddy and cotton blanket to match. (price is for set)', :unit_price => 49.95, :picture => '294.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'Cerise & lime velour two piece.', :unit_price => 31.95, :picture => '295.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'Turquoise & lime velour two piece.', :unit_price => 31.95, :picture => '297.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'Orange & turquoise velour two piece set.', :unit_price => 31.95, :picture => '298.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Coco', :description => 'Blue & pink cotton rompers with hats to match.', :unit_price => 29.95, :picture => '299.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Emile et Rose', :description => 'Baby pink cotton romper with hairband and socks to match.', :unit_price => 44.95, :picture => '301.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Trocadero', :description => 'Pink floral dress with bows on shoulders.', :unit_price => 41.95, :picture => '304.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Sarah Louise', :description => 'Chiffon dress with ornate design and bonnet to match.', :unit_price => 119.95, :picture => '305.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Sarah Louise', :description => 'Cotton all in one with hat to match.', :unit_price => 51.95, :picture => '307.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'', :description => 'Boys satin romper with waist coat and bow tie and hat to match.', :unit_price => 59.95, :picture => '308.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'', :description => 'White robe with shower of hail fabric and satin frill bonnet to match.', :unit_price => 89.95, :picture => '309.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Ellepi', :description => 'Matching pink & blue velour rompers for those twins out there!', :unit_price => 19.95, :picture => '310.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Red & white stripe sweatshirt with collar and cotton white trousers to match.', :unit_price => 41.95, :picture => '312.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Navy / white stripe sweatshirt with cotton navy trousers.', :unit_price => 39.95, :picture => '313.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Mid Blue & white stripe sweatshirt with white collar and cotton trousers to match.', :unit_price => 41.95, :picture => '314.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Navy cotton polo sweatshirt with navy & white stripe trousers.', :unit_price => 42.95, :picture => '315.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Mid blue cotton hoodie top with check trousers to match.', :unit_price => 41.95, :picture => '316.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Navy / white polo tshirt with navy cotton shorts to match.', :unit_price => 24.95, :picture => '317.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Mayoral', :description => 'Baby Pink Cotton dress and panties matching.', :unit_price => 32.95, :picture => '322.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Ellepi', :description => 'Two piece baby pink velour suit. Hat optional Emille et Rose.', :unit_price => 19.95, :picture => '323.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi Petto', :description => 'Navy & White cotton dresses with leggings.', :unit_price => 24.95, :picture => '326.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi Petto', :description => 'Red & White check dress & panties.', :unit_price => 26.95, :picture => '330.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi Petto', :description => 'Army green trousers. Army green & cream stripe sweatshirt trimmed with denim.', :unit_price => 24.95, :picture => '334.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi Petto', :description => 'Royal blue cotton jacket with striped sweatshirt to match.', :unit_price => 21.95, :picture => '335.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi Petto', :description => 'Navy & white nautical sweatshirt, white long sleeved top trimmed with navy & orange, navy trousers.', :unit_price => 19.95, :picture => '336.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi Petto', :description => 'Green & cream rugby sweatshirt with navy cotton trousers.', :unit_price => 19.95, :picture => '337.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'First Occasion', :description => 'Ornate silk Christening gown with matching bonnet.', :unit_price => 104.95, :picture => '339.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Jacky', :description => 'Lemon & cream velour 4 piece set. Pull-ups, top, jacket & hat all included as set.', :unit_price => 44.95, :picture => '340.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Girandola', :description => 'Baby pink velour romper and pink blanket set trimmed with chocolate brown motif.', :unit_price => 44.95, :picture => '341.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tucha', :description => 'Pink & Charcoal Grey velour 2-piece sets.', :unit_price => 34.95, :picture => '346.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Du Du', :description => 'Red velour dresses with multicoloured stripped tights. Ideal Christmas dress - 29.95 for dress & tights matching.', :unit_price => 29.95, :picture => '367.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Tara Lee', :description => 'Girls Christening dress in shorter length with matching bonnet. Available from birth to 12 months.', :unit_price => 49.95, :picture => '374.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Tara Lee', :description => 'Girls Christening dress in shorter length with matching hairband. Available from birth to 12 months.', :unit_price => 49.95, :picture => '375.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'First Occasion', :description => 'Silk designed Christening robe with matching designed bonnet.', :unit_price => 104.95, :picture => '376.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'First Occasion', :description => 'Pearl & Se-quince silk gown with bonnet matching.', :unit_price => 104.95, :picture => '377.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Cream & charcoal grey dress with leggings and leg warmers to match.', :unit_price => 54.95, :picture => '384.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Darcy Brown', :description => 'Cerise pink velvet skirt with netting & pink cotton self stripe top with bow.', :unit_price => 79.95, :picture => '386.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Ellepi', :description => 'Neutral velour cream & white stripe romper and top matching.', :unit_price => 24.95, :picture => '396.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Jacky', :description => 'Lemon velour top with coloured romper - grey, lemon and cream to match.', :unit_price => 24.95, :picture => '397.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Jacky', :description => 'Rust velour top with stripe - romper to match.', :unit_price => 19.95, :picture => '398.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Dodi-Petto', :description => 'Camel & cream stripped velour trousers with cream velour top to match.', :unit_price => 19.95, :picture => '399.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => false)
-Product.create(:product_name =>'Jacky', :description => 'Four piece lemon neutral set -  romper, top, jacket & hat in soft velour.', :unit_price => 49.95, :picture => '400.jpg', :colour => 'n/a', :size => 0, :gender => 'n/a', :active => true)
-
+Product.create(:product_name =>'Range of Hats',
+               :description => 'We stock a fabulous range of hats Cotton Pull on hats in all colours available from 0 to 3 Months Stripe and Stocking hats in different colours also',
+               :unit_price => 6.95,
+               :picture => 'seeds/129.jpg',
+               :colour => 'multi',
+               :size => 0,
+               :gender_id => 3,
+               :active => true,
+               :category_id => 9
+)
+Product.create(:product_name =>'Phister & Philina',
+               :description => 'Purple & Lime Cotton Dress & Legging. Mayoral Cardigans to compliment outfits from 13.95 in all colours', 
+               :unit_price => 49.95, 
+               :picture => 'seeds/227.jpg', 
+               :colour => 'purple', 
+               :size => 1, 
+               :gender_id => 2, 
+               :active => true, 
+               :category_id => 1
+)
+Product.create(:product_name =>'Mayoral',
+:description => 'Coral waisted dress with pleat effect.', 
+               :unit_price => 34.95, 
+               :picture => 'seeds/266.jpg', 
+               :colour => 'pink', 
+               :size => 3, 
+               :gender_id => 2, 
+               :active => true, 
+               :category_id => 6
+)
+Product.create(:product_name =>'Mayoral',
+:description => 'Pretty navy & white polka dot dress. Available in coral also.', 
+               :unit_price => 41.95, 
+               :picture => 'seeds/267.jpg', 
+               :colour => 'white',
+               :size => 4, 
+               :gender_id => 2, 
+               :active => true, 
+               :category_id => 6
+)
+Product.create(:product_name =>'Loff', 
+               :description => 'Puffball dress & leggings in Coral with Mayoral cardigan to match. (64.95 for set)', 
+               :unit_price => 64.95,
+:picture => 'seeds/272.jpg', 
+               :colour => 'pink', 
+               :size => 4, 
+               :gender_id => 2, 
+               :active => true, 
+               :category_id => 6
+)
+Product.create(:product_name =>'Tucha', 
+               :description => 'Orange & lime stripe romper & available in two piece also.', 
+               :unit_price => 29.95,
+               :picture => 'seeds/291.jpg',
+               :colour => 'orange',
+               :size => 0, 
+               :gender_id => 3, 
+               :active => true, 
+               :category_id => 0
+)
+Product.create(:product_name =>'Tucha',
+               :description => 'New Baby Range Velour red, white & navy romper. Available in two piece suit also.',
+               :unit_price => 29.95,
+               :picture => 'seeds/292.jpg',
+               :colour => 'red',
+               :size => 0,
+               :gender_id => 3,
+               :active => true,
+               :category_id => 0
+)
+Product.create(:product_name =>'Tucha',
+               :description => 'Cerise & lime velour two piece.',
+               :unit_price => 31.95,
+               :picture => 'seeds/295.jpg',
+               :colour => 'pink',
+               :size => 0,
+               :gender_id => 2,
+               :active => true,
+               :category_id => 1
+)
+Product.create(:product_name =>'Tucha',
+               :description => 'Turquoise & lime velour two piece.',
+               :unit_price => 31.95,
+               :picture => 'seeds/297.jpg',
+               :colour => 'green',
+               :size => 0,
+               :gender_id => 3,
+               :active => true,
+               :category_id => 0
+)
+Product.create(:product_name =>'Trocadero',
+               :description => 'Pink floral dress with bows on shoulders.',
+               :unit_price => 41.95,
+               :picture => 'seeds/304.jpg',
+               :colour => 'pink',
+               :size => 3,
+               :gender_id => 2,
+               :active => true,
+               :category_id => 6)
+Product.create(:product_name =>'Dodi-Petto',
+               :description => 'Mid Blue & white stripe sweatshirt with white collar and cotton trousers to match.',
+               :unit_price => 41.95,
+               :picture => 'seeds/314.jpg',
+               :colour => 'blue',
+               :size => 2,
+               :gender_id => 1,
+               :active => true,
+               :category_id => 7
+)
+Product.create(:product_name =>'Du Du',
+               :description => 'Red velour dresses with multicoloured stripped tights. Ideal Christmas dress - 29.95 for dress & tights matching.',
+               :unit_price => 29.95,
+               :picture => 'seeds/367.jpg',
+               :colour => 'red',
+               :size => 0,
+               :gender_id => 2,
+               :active => true,
+               :category_id => 1
+)
+Product.create(:product_name =>'First Occasion',
+               :description => 'Silk designed Christening robe with matching designed bonnet.',
+               :unit_price => 104.95,
+               :picture => 'seeds/376.jpg',
+               :colour => 'white',
+               :size => 0,
+               :gender_id => 3,
+               :active => true,
+               :category_id => 0
+)
+Product.create(:product_name =>'First Occasion',
+               :description => 'Pearl & Se-quince silk gown with bonnet matching.',
+               :unit_price => 104.95,
+               :picture => 'seeds/377.jpg',
+               :colour => 'white',
+               :size => 0,
+               :gender_id => 3,
+               :active => true,
+               :category_id => 0
+)
+Product.create(:product_name =>'Darcy Brown',
+               :description => 'Cerise pink velvet skirt with netting & pink cotton self stripe top with bow.',
+               :unit_price => 79.95,
+               :picture => 'seeds/386.jpg',
+               :colour => 'pink',
+               :size => 1,
+               :gender_id => 2,
+               :active => true,
+               :category_id => 1
+)
 
 Category.delete_all
 Category.create(:category_name => 'Layette')
@@ -115,3 +182,4 @@ Category.create(:category_name => 'Girl - 2 to 8 years')
 Category.create(:category_name => 'Boy - 2 to 8 years')
 Category.create(:category_name => 'Boy - Holy Communion')
 Category.create(:category_name => 'Hats')
+

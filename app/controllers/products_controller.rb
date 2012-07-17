@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.xml
   def index
+    # Change the default
     @products = Product.search(params[:search_query])
 
     respond_to do |format|
@@ -26,6 +27,11 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
 
+    # Make available categories data to associate with product via dropdown menu in form
+    @categories = Category.all
+    # Make available gender data to associate with product via dropdown menu in form
+    @genders = Gender.all
+
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @product }
@@ -35,6 +41,11 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
+
+    # Make available categories data to associate with product via dropdown menu in form
+    @categories = Category.all
+    # Make available gender data to associate with product via dropdown menu in form
+    @genders = Gender.all
   end
 
   # POST /products
@@ -44,6 +55,9 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
+        redirect_to(@product, :notice => 'Success - product was created')
+
+
         format.html { redirect_to(@product, :notice => 'Product was successfully created.') }
         format.xml  { render :xml => @product, :status => :created, :location => @product }
       else

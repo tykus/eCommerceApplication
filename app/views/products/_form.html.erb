@@ -10,44 +10,51 @@
       </ul>
     </div>
   <% end %>
+  <table>
+  <tr class="field">
+    <td><%= f.label :product_name %></td>
+    <td><%= f.text_field :product_name %> </td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :category_id %>   </td>
+    <td><%= collection_select(:product, :category_id, @categories, :id, :category_name, {:prompt => false })  %></td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :description %> </td>
+    <td><%= f.text_area :description %></td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :unit_price %> </td>
+    <td><%= f.text_field :unit_price %> </td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :photo %></td>
+    <td><%= f.file_field :photo %> </td>
+  </tr>
+  <tr class="field">
+    <td> <%= f.label :picture %> </td>
+    <td><%= f.text_field :picture %></td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :colour %></td>
+    <td><%= f.text_field :colour %></td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :size %> </td>
+    <td><%= f.text_field :size %></td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :gender %></td>
+    <td><%= collection_select(:product, :gender_id, @genders, :id, :gender, {:prompt => false })  %></td>
+  </tr>
+  <tr class="field">
+    <td></td>
+    <td><%= f.check_box :active %> <%= f.label :active %> </td>
+  </tr>
+  <tr class="actions">
+    <td></td>
+    <td><%= f.submit %></td>
+  </tr>
+  </table>
 
-  <div class="field">
-    <%= f.label :product_name %><br />
-    <%= f.text_field :product_name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :unit_price %><br />
-    <%= f.text_field :unit_price %>
-  </div>
-  <div class="field">
-    <%= f.label :photo %><br />
-    <%= f.file_field :photo %>
-  </div>
-  <div class="field">
-    <%= f.label :picture %><br />
-    <%= f.text_field :picture %>
-  </div>
-  <div class="field">
-    <%= f.label :colour %><br />
-    <%= f.text_field :colour %>
-  </div>
-  <div class="field">
-    <%= f.label :size %><br />
-    <%= f.text_field :size %>
-  </div>
-  <div class="field">
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
-  </div>
-  <div class="field">
-    <%= f.label :active %><br />
-    <%= f.check_box :active %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

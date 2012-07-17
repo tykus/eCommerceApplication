@@ -2,18 +2,22 @@
 
 <table>
   <tr>
-    <th>Category name</th>
+    <th>Category ID</th>
+    <th>Category Name</th>
+    <th>Category Photo</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @categories.each do |category| %>
-  <tr>
+  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    <td><%= category.id %></td>
     <td><%= category.category_name %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= image_tag(category.photo.url) %></td>
+    <td><%= link_to image_tag('icons/show.png'), category %></td>
+    <td><%= link_to image_tag('icons/edit.png'), edit_category_path(category) %></td>
+    <td><%= link_to image_tag('icons/delete.png'), category, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

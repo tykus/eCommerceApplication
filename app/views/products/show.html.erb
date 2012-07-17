@@ -1,12 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p class="showProduct">
-  <%  if @product.photo.exists? then %>
-      <%= image_tag(@product.photo.url(:thumb)) %>
-  <% else %>
-      <%= image_tag(@product.picture) %>
-   <% end %>
-</p>
+<%= # display the current image attached to the product
+    image_tag(@product.picture, :class => 'showProduct', :alt => 'Current Image', :title => 'Current Image')
+%>
+
 <h1>
   <%= @product.product_name %>
 </h1>
@@ -14,6 +11,11 @@
 <p>
   <b>Description:</b>
   <%= @product.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @product.category.try(:category_name) %>
 </p>
 
 <p>
@@ -32,7 +34,7 @@
 
 <p>
   <b>Gender:</b>
-  <%= @product.gender %>
+  <%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %>
 </p>
 
 <p>
@@ -40,7 +42,14 @@
   <%= @product.active %>
 </p>
 
+<table class="nav_icons">
+  <tr>
+    <td><%= link_to image_tag('icons/back.png', :alt => "Back", :title => "Back"), products_path %></td>
+    <td><%= link_to image_tag('icons/edit.png', :alt => "Edit", :title => "Edit"), edit_product_path(@product) %></td>
+    <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete Product'), @product, :confirm => 'Are you sure you want to delete this product?', :method => :delete %></td>
+  </tr>
+</table>
 
-<%= link_to image_tag('icons/edit.png', :alt => "Edit"), edit_product_path(@product) %>
-<br />
-<%= link_to image_tag('icons/back.png', :alt => "Back"), products_path %>
+
+
+

@@ -2,165 +2,181 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0518266-cb0d-4233-8439-14c69f844baf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\add.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\back.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\delete.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\edit.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\f.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\m.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\n.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\rails.png" afterPath="" />
-      <change type="DELETED" beforePath="B:\src\eCommerceApplication\public\images\show.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/eCommerceApplication.iml" afterPath="$PROJECT_DIR$/.idea/eCommerceApplication.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/101.jpg" afterPath="$PROJECT_DIR$/public/images/101.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/102.jpg" afterPath="$PROJECT_DIR$/public/images/102.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/103.jpg" afterPath="$PROJECT_DIR$/public/images/103.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/104.jpg" afterPath="$PROJECT_DIR$/public/images/104.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/105.jpg" afterPath="$PROJECT_DIR$/public/images/105.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/107.jpg" afterPath="$PROJECT_DIR$/public/images/107.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/108.jpg" afterPath="$PROJECT_DIR$/public/images/108.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/109.jpg" afterPath="$PROJECT_DIR$/public/images/109.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/110.jpg" afterPath="$PROJECT_DIR$/public/images/110.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/111.jpg" afterPath="$PROJECT_DIR$/public/images/111.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/113.jpg" afterPath="$PROJECT_DIR$/public/images/113.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/114.jpg" afterPath="$PROJECT_DIR$/public/images/114.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/115.jpg" afterPath="$PROJECT_DIR$/public/images/115.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/116.jpg" afterPath="$PROJECT_DIR$/public/images/116.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/118.jpg" afterPath="$PROJECT_DIR$/public/images/118.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/119.jpg" afterPath="$PROJECT_DIR$/public/images/119.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/120.jpg" afterPath="$PROJECT_DIR$/public/images/120.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/121.jpg" afterPath="$PROJECT_DIR$/public/images/121.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/122.jpg" afterPath="$PROJECT_DIR$/public/images/122.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/123.jpg" afterPath="$PROJECT_DIR$/public/images/123.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/128.jpg" afterPath="$PROJECT_DIR$/public/images/128.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/129.jpg" afterPath="$PROJECT_DIR$/public/images/129.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/132.jpg" afterPath="$PROJECT_DIR$/public/images/132.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/135.jpg" afterPath="$PROJECT_DIR$/public/images/135.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/136.jpg" afterPath="$PROJECT_DIR$/public/images/136.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/137.jpg" afterPath="$PROJECT_DIR$/public/images/137.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/139.jpg" afterPath="$PROJECT_DIR$/public/images/139.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/140.jpg" afterPath="$PROJECT_DIR$/public/images/140.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/141.jpg" afterPath="$PROJECT_DIR$/public/images/141.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/145.jpg" afterPath="$PROJECT_DIR$/public/images/145.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/146.jpg" afterPath="$PROJECT_DIR$/public/images/146.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/147.jpg" afterPath="$PROJECT_DIR$/public/images/147.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/148.jpg" afterPath="$PROJECT_DIR$/public/images/148.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/149.jpg" afterPath="$PROJECT_DIR$/public/images/149.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/150.jpg" afterPath="$PROJECT_DIR$/public/images/150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/151.jpg" afterPath="$PROJECT_DIR$/public/images/151.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/152.jpg" afterPath="$PROJECT_DIR$/public/images/152.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/153.jpg" afterPath="$PROJECT_DIR$/public/images/153.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/154.jpg" afterPath="$PROJECT_DIR$/public/images/154.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/155.jpg" afterPath="$PROJECT_DIR$/public/images/155.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/156.jpg" afterPath="$PROJECT_DIR$/public/images/156.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/157.jpg" afterPath="$PROJECT_DIR$/public/images/157.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/209.jpg" afterPath="$PROJECT_DIR$/public/images/209.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/210.jpg" afterPath="$PROJECT_DIR$/public/images/210.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/211.jpg" afterPath="$PROJECT_DIR$/public/images/211.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/227.jpg" afterPath="$PROJECT_DIR$/public/images/227.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/26.jpg" afterPath="$PROJECT_DIR$/public/images/26.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/266.jpg" afterPath="$PROJECT_DIR$/public/images/266.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/267.jpg" afterPath="$PROJECT_DIR$/public/images/267.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/268.jpg" afterPath="$PROJECT_DIR$/public/images/268.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/269.jpg" afterPath="$PROJECT_DIR$/public/images/269.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/270.jpg" afterPath="$PROJECT_DIR$/public/images/270.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/271.jpg" afterPath="$PROJECT_DIR$/public/images/271.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/272.jpg" afterPath="$PROJECT_DIR$/public/images/272.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/277.jpg" afterPath="$PROJECT_DIR$/public/images/277.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/278.jpg" afterPath="$PROJECT_DIR$/public/images/278.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/279.jpg" afterPath="$PROJECT_DIR$/public/images/279.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/280.jpg" afterPath="$PROJECT_DIR$/public/images/280.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/281.jpg" afterPath="$PROJECT_DIR$/public/images/281.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/282.jpg" afterPath="$PROJECT_DIR$/public/images/282.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/283.jpg" afterPath="$PROJECT_DIR$/public/images/283.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/284.jpg" afterPath="$PROJECT_DIR$/public/images/284.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/286.jpg" afterPath="$PROJECT_DIR$/public/images/286.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/287.jpg" afterPath="$PROJECT_DIR$/public/images/287.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/288.jpg" afterPath="$PROJECT_DIR$/public/images/288.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/289.jpg" afterPath="$PROJECT_DIR$/public/images/289.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/290.jpg" afterPath="$PROJECT_DIR$/public/images/290.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/291.jpg" afterPath="$PROJECT_DIR$/public/images/291.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/292.jpg" afterPath="$PROJECT_DIR$/public/images/292.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/293.jpg" afterPath="$PROJECT_DIR$/public/images/293.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/294.jpg" afterPath="$PROJECT_DIR$/public/images/294.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/295.jpg" afterPath="$PROJECT_DIR$/public/images/295.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/297.jpg" afterPath="$PROJECT_DIR$/public/images/297.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/298.jpg" afterPath="$PROJECT_DIR$/public/images/298.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/299.jpg" afterPath="$PROJECT_DIR$/public/images/299.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/301.jpg" afterPath="$PROJECT_DIR$/public/images/301.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/304.jpg" afterPath="$PROJECT_DIR$/public/images/304.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/305.jpg" afterPath="$PROJECT_DIR$/public/images/305.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/307.jpg" afterPath="$PROJECT_DIR$/public/images/307.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/308.jpg" afterPath="$PROJECT_DIR$/public/images/308.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/309.jpg" afterPath="$PROJECT_DIR$/public/images/309.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/310.jpg" afterPath="$PROJECT_DIR$/public/images/310.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/312.jpg" afterPath="$PROJECT_DIR$/public/images/312.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/313.jpg" afterPath="$PROJECT_DIR$/public/images/313.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/314.jpg" afterPath="$PROJECT_DIR$/public/images/314.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/315.jpg" afterPath="$PROJECT_DIR$/public/images/315.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/316.jpg" afterPath="$PROJECT_DIR$/public/images/316.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/317.jpg" afterPath="$PROJECT_DIR$/public/images/317.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/322.jpg" afterPath="$PROJECT_DIR$/public/images/322.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/323.jpg" afterPath="$PROJECT_DIR$/public/images/323.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/326.jpg" afterPath="$PROJECT_DIR$/public/images/326.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/330.jpg" afterPath="$PROJECT_DIR$/public/images/330.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/334.jpg" afterPath="$PROJECT_DIR$/public/images/334.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/335.jpg" afterPath="$PROJECT_DIR$/public/images/335.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/336.jpg" afterPath="$PROJECT_DIR$/public/images/336.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/337.jpg" afterPath="$PROJECT_DIR$/public/images/337.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/339.jpg" afterPath="$PROJECT_DIR$/public/images/339.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/340.jpg" afterPath="$PROJECT_DIR$/public/images/340.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/341.jpg" afterPath="$PROJECT_DIR$/public/images/341.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/346.jpg" afterPath="$PROJECT_DIR$/public/images/346.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/367.jpg" afterPath="$PROJECT_DIR$/public/images/367.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/374.jpg" afterPath="$PROJECT_DIR$/public/images/374.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/375.jpg" afterPath="$PROJECT_DIR$/public/images/375.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/376.jpg" afterPath="$PROJECT_DIR$/public/images/376.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/377.jpg" afterPath="$PROJECT_DIR$/public/images/377.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/384.jpg" afterPath="$PROJECT_DIR$/public/images/384.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/386.jpg" afterPath="$PROJECT_DIR$/public/images/386.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/396.jpg" afterPath="$PROJECT_DIR$/public/images/396.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/397.jpg" afterPath="$PROJECT_DIR$/public/images/397.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/398.jpg" afterPath="$PROJECT_DIR$/public/images/398.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/399.jpg" afterPath="$PROJECT_DIR$/public/images/399.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/400.jpg" afterPath="$PROJECT_DIR$/public/images/400.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/background.jpg" afterPath="$PROJECT_DIR$/public/images/background.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/header.png" afterPath="$PROJECT_DIR$/public/images/header.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/add.png" afterPath="$PROJECT_DIR$/public/images/icons/add.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/back.png" afterPath="$PROJECT_DIR$/public/images/icons/back.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/delete.png" afterPath="$PROJECT_DIR$/public/images/icons/delete.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/edit.png" afterPath="$PROJECT_DIR$/public/images/icons/edit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/f.png" afterPath="$PROJECT_DIR$/public/images/icons/f.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/m.png" afterPath="$PROJECT_DIR$/public/images/icons/m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/n.png" afterPath="$PROJECT_DIR$/public/images/icons/n.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/icons/show.png" afterPath="$PROJECT_DIR$/public/images/icons/show.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/105.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/110.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/111.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/114.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/115.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/118.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/119.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/121.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/129.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/227.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/266.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/267.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/272.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/291.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/292.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/297.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/304.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/314.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/367.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/376.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/377.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/seeds/386.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/categories/photos/000/000/031/original/layette.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/categories/photos/000/000/032/original/baby_girl.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/categories/photos/000/000/041/original/layette.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/categories/photos/000/000/042/original/baby_girl.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/categories/photos/000/000/043/original/baby_boy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20120717115154_add_photo_to_categories.rb" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\101.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\102.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\104.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\105.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\107.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\108.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\109.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\110.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\111.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\113.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\114.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\115.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\116.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\118.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\119.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\120.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\121.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\122.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\123.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\129.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\132.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\135.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\136.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\137.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\139.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\140.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\141.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\145.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\146.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\147.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\148.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\149.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\151.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\152.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\153.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\154.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\155.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\156.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\157.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\209.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\210.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\211.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\227.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\266.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\267.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\268.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\269.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\270.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\271.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\272.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\277.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\278.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\279.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\280.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\281.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\282.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\283.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\284.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\286.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\287.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\288.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\289.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\290.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\291.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\292.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\293.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\294.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\295.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\297.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\298.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\299.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\301.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\304.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\305.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\307.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\308.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\309.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\310.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\312.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\313.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\314.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\315.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\316.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\317.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\322.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\323.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\326.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\330.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\334.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\335.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\336.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\337.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\339.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\340.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\341.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\346.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\367.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\374.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\375.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\376.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\377.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\384.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\386.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\396.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\397.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\398.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\399.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\400.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\add.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\back.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\delete.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\edit.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\f.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\m.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\n.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\rails.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\images\show.png" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\system\products\photos\000\000\371\large\__05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\system\products\photos\000\000\371\original\__05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="U:\Brian\eCommerceApplication\public\system\products\photos\000\000\371\thumb\__05.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/new.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/products/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/index.html.erb" afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/new.html.erb" afterPath="$PROJECT_DIR$/app/views/products/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/show.html.erb" afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20120716161329_add_category_id_to_product.rb" afterPath="$PROJECT_DIR$/db/migrate/20120716161329_add_category_id_to_product.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/rails" afterPath="$PROJECT_DIR$/script/rails" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/products_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/products_controller_test.rb" />
     </list>
     <ignored path="eCommerceApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -186,31 +202,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="44" selection-start="263" selection-end="263" vertical-scroll-proportion="0.24697337">
-              <folding>
-                <marker date="1342482674000" expanded="true" signature="328:335" placeholder="..." />
-                <marker date="1342482674000" expanded="true" signature="335:415" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/products/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="67" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="product.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="46" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="6" column="53" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -219,34 +214,52 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="54" selection-start="21" selection-end="54" vertical-scroll-proportion="6.8076925">
+            <state line="47" column="105" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-17.307692">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20120716215822_add_photo_to_products.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20120716215822_add_photo_to_products.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="118" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+            <state line="36" column="124" selection-start="702" selection-end="720" vertical-scroll-proportion="-23.538462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+      <file leaf-file-name="products_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+            <state line="47" column="25" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/categories/edit.html.erb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/products/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="11" column="40" selection-start="351" selection-end="351" vertical-scroll-proportion="0.24191462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="127" selection-start="836" selection-end="836" vertical-scroll-proportion="-18.961538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="238" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -255,7 +268,25 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="177" selection-end="177" vertical-scroll-proportion="-5.8846154">
+            <state line="24" column="24" selection-start="636" selection-end="636" vertical-scroll-proportion="-15.692307">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/categories/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.2692308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gender.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/gender.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="54" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -275,30 +306,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
-        <option value="$PROJECT_DIR$/test/functional/products_controller_test.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/db/migrate/20120716151252_add_attachment_photo_to_products.rb" />
-        <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-        <option value="$PROJECT_DIR$/app/views/products/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/products/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20120716215822_add_photo_to_products.rb" />
-        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20120717153611_create_genders.rb" />
+        <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/gender.rb" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
+        <option value="/Rails eCommerceApplication: development" />
+        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20120717193751_change_column_gender_in_products.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/categories/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/products/edit.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="x" value="-3" />
+    <option name="width" value="1923" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -402,6 +432,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eCommerceApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eCommerceApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -461,6 +509,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,20 +604,53 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Database.TableEditor.Splitter" value="0.9" />
+    <property name="Database.TableEditor.Splitter" value="0.8999999" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="coverage" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Rails.Development: eCommerceApplication">
+  <component name="RunManager" selected="JavaScript Debug.show.html.erb">
     <configuration default="false" name="Default" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console" temporary="true">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="eCommerceApplication" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="show.html.erb" type="JavascriptDebugSession" factoryName="Remote" temporary="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" value="http://localhost:3000/categories/1" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -651,6 +736,15 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method>
         <option name="RakeTask" enabled="false" />
       </method>
@@ -755,12 +849,14 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Query Language Console.Default" />
       <item index="1" class="java.lang.String" itemvalue="Rake.test" />
       <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Production: eCommerceApplication" />
       <item index="4" class="java.lang.String" itemvalue="Rails.Development: eCommerceApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.show.html.erb" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -811,27 +907,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-3" y="0" width="1923" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32745728" sideWeight="0.6703663" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.49839744" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.49786323" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32525578" sideWeight="0.6704417" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.49786323" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.49786323" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12660256" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33635333" sideWeight="0.49786323" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23371029" sideWeight="0.6704417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944071" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3227633" sideWeight="0.49839744" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.336293" sideWeight="0.49786323" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.49786323" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -890,132 +986,111 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="82" selection-end="82" vertical-scroll-proportion="0.040767387">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="424" selection-end="424" vertical-scroll-proportion="-0.5">
-          <folding>
-            <marker date="1342452651000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1342452651000" expanded="true" signature="-1:-1" placeholder="do ... end" />
-            <marker date="1342452651000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="51" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="30" selection-start="271" selection-end="271" vertical-scroll-proportion="-12.423077">
+        <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120717153611_create_genders.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="165" selection-start="225" selection-end="225" vertical-scroll-proportion="0.4547325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/gender.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="54" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120717115154_add_photo_to_categories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="300" selection-end="465" vertical-scroll-proportion="0.25817758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbElement:/e8b0b4bd/2b69d43f-91d0-4988-b63d-41d3705493be/..genders">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120717193751_change_column_gender_in_products.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="149" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="39" selection-start="23080" selection-end="23080" vertical-scroll-proportion="0.0">
+        <state line="40" column="238" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="29" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120716215822_add_photo_to_products.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="118" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="54" selection-start="21" selection-end="54" vertical-scroll-proportion="6.8076925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="468" selection-end="468" vertical-scroll-proportion="0.43896714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/9c931d95-3d42-4b58-8705-d1cdd2a052e1">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>9c931d95-3d42-4b58-8705-d1cdd2a052e1</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="511.0" y="413.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key Columns</Category>
-            <Category>Columns</Category>
-          </Categories>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+        <state line="6" column="53" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="177" selection-end="177" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="67" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.8846154">
+        <state line="47" column="25" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="263" selection-end="263" vertical-scroll-proportion="0.24697337">
-          <folding>
-            <marker date="1342482674000" expanded="true" signature="328:335" placeholder="..." />
-            <marker date="1342482674000" expanded="true" signature="335:415" placeholder="..." />
-          </folding>
+        <state line="36" column="124" selection-start="702" selection-end="720" vertical-scroll-proportion="-23.538462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="127" selection-start="836" selection-end="836" vertical-scroll-proportion="-18.961538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbElement:/e8b0b4bd/2b69d43f-91d0-4988-b63d-41d3705493be/..categories">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="24" selection-start="636" selection-end="636" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="105" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-17.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="351" selection-end="351" vertical-scroll-proportion="0.24191462">
+          <folding />
         </state>
       </provider>
     </entry>

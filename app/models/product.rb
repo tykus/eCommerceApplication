@@ -1,29 +1,13 @@
 class Product < ActiveRecord::Base
-  # Every product belongs to one category only
+  # Every product belongs to exactly one category
   belongs_to :category
+  belongs_to :gender
 
-  has_attached_file :photo,
-                    :styles => {
-                        :thumb => "100x100#",
-                        :large => "400x400>"
-                    }
+  # Paperclip:
+  has_attached_file :photo
 
-  # Validation of data begin sent to the Product model
-  # We must have a product name, a description and a product image
-  #
-  #  Classname e.g. product.rb
-  #
-  #  Rev 1
-  #
-  #  Date 16-07-2012
-  #
-  #  @author Brian O'Sullivan, 11114835
-  #  @reference Agile Web Development with Rails, 4th ed.
-  #
-  #
-
-
-  validates :product_name, :description, :picture, presence: true
+  # Ensure that the product is created with a product_name
+  validates :product_name, presence: true
 
   # Ensure that every product has a valid price, i.e. > 0.00
   validates_numericality_of :unit_price, :greater_than => 0.00
