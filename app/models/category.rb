@@ -1,6 +1,6 @@
 class Category < ActiveRecord::Base
   # A category may have zero or many products
-  has_many :products
+  has_many :products, :dependent => :destroy
 
   # Paperclip:
   has_attached_file :photo

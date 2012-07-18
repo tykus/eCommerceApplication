@@ -1,8 +1,10 @@
-<h1>Listing stock_items</h1>
-
+<h1>Listing Stock Items</h1>
+<p id="notice"><%= notice %></p>
 <table>
   <tr>
-    <th>Product</th>
+    <th>SKU</th>
+    <th>Product Image</th>
+    <th>Product Name</th>
     <th>Size</th>
     <th>Quantity in stock</th>
     <th></th>
@@ -12,12 +14,14 @@
 
 <% @stock_items.each do |stock_item| %>
   <tr>
-    <td><%= stock_item.product_id %></td>
-    <td><%= stock_item.size_id %></td>
+    <td><%= stock_item.id %></td>
+    <td><%= image_tag(stock_item.product.picture, :title => stock_item.product.product_name, :class => 'thumb') %></td>
+    <td><%= stock_item.product.product_name %></td>
+    <td><%= stock_item.size.size_name %></td>
     <td><%= stock_item.quantity_in_stock %></td>
-    <td><%= link_to 'Show', stock_item %></td>
-    <td><%= link_to 'Edit', edit_stock_item_path(stock_item) %></td>
-    <td><%= link_to 'Destroy', stock_item, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to image_tag('icons/show.png', :alt => 'Show', :title => 'Show'), stock_item %></td>
+    <td><%= link_to image_tag('icons/edit.png', :alt => 'Edit', :title => 'Edit'), edit_stock_item_path(stock_item) %></td>
+    <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete'), stock_item, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

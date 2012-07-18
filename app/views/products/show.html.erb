@@ -7,40 +7,32 @@
 <h1>
   <%= @product.product_name %>
 </h1>
-
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @product.category.try(:category_name) %>
-</p>
-
-<p>
-  <b>Unit price:</b>
-  <%= number_to_currency(@product.unit_price, :unit=>'€') %>
-</p>
-<p>
-  <b>Colour:</b>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <b>Size:</b>
-  <%= @product.size %>
-</p>
-
-<p>
-  <b>Gender:</b>
-  <%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %>
-</p>
-
-<p>
-  <b>Active:</b>
-  <%= @product.active %>
-</p>
+<table>
+  <tr>
+    <td class='label'>Description</td>
+    <td><%= @product.description %></td>
+  </tr>
+  <tr>
+    <td class='label'>Category</td>
+    <td><%= @product.category.try(:category_name) %></td>
+  </tr>
+  <tr>
+    <td class='label'>Unit Price</td>
+    <td><%= number_to_currency(@product.unit_price, :unit=>'€') %></td>
+  </tr>
+  <tr>
+    <td class='label'>Colour</td>
+    <td> <%= @product.colour %></td>
+  </tr>
+  <tr>
+    <td class='label'>Gender</td>
+    <td><%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %></td>
+  </tr>
+  <tr>
+    <td class='label'>Active</td>
+    <td><%=  @product.active %></td>
+  </tr>
+</table>
 
 <table class="nav_icons">
   <tr>

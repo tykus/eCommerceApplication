@@ -4,8 +4,9 @@
 <%  if @product.photo.exists? then %>
     <%= image_tag(@product.photo.url, :class => 'showProduct') %>
 <% else %>
-    # display the current seed image attached to the product
-    <%= image_tag(@product.picture, :class => 'showProduct', :alt => 'Current Image', :title => 'Current Image') %>
+    <%= # display the current seed image attached to the product
+        image_tag(@product.picture, :class => 'showProduct', :alt => 'Current Image', :title => 'Current Image')
+    %>
 <% end %>
 
 

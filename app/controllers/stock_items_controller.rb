@@ -2,7 +2,7 @@ class StockItemsController < ApplicationController
   # GET /stock_items
   # GET /stock_items.xml
   def index
-    @stock_items = StockItem.all
+    @stock_items = StockItem.all(:order => 'product_id, size_id')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,6 +26,11 @@ class StockItemsController < ApplicationController
   def new
     @stock_item = StockItem.new
 
+    # Make available size data to associate with stock_item via dropdown menu in form
+    @sizes = Size.all
+    # Make available product data to associate with stock_item via dropdown menu in form
+    @products = Product.all
+
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @stock_item }
@@ -34,17 +39,25 @@ class StockItemsController < ApplicationController
 
   # GET /stock_items/1/edit
   def edit
+
     @stock_item = StockItem.find(params[:id])
+
+    # Make available size data to associate with stock_item via dropdown menu in form
+    @sizes = Size.all
+    # Make available product data to associate with stock_item via dropdown menu in form
+    @products = Product.all
+
+
   end
 
   # POST /stock_items
   # POST /stock_items.xml
   def create
     @stock_item = StockItem.new(params[:stock_item])
-
+    @stock_item
     respond_to do |format|
       if @stock_item.save
-        format.html { redirect_to(@stock_item, :notice => 'Stock item was successfully created.') }
+        format.html { redirect_to(stock_items_url, :notice => 'Stock item was successfully created.') }
         format.xml  { render :xml => @stock_item, :status => :created, :location => @stock_item }
       else
         format.html { render :action => "new" }
@@ -60,7 +73,7 @@ class StockItemsController < ApplicationController
 
     respond_to do |format|
       if @stock_item.update_attributes(params[:stock_item])
-        format.html { redirect_to(@stock_item, :notice => 'Stock item was successfully updated.') }
+        format.html { redirect_to(stock_items_url, :notice => 'Stock item was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -80,4 +93,6 @@ class StockItemsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+
 end

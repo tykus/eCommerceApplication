@@ -6,10 +6,8 @@ class Product < ActiveRecord::Base
   belongs_to :gender
 
   # Associative Relationship with size model thru stock_items
-  has_many :stock_items
+  has_many :stock_items, :dependent => :destroy
   has_many :sizes, :through => :stock_items
-
-
 
   # Paperclip:
   has_attached_file :photo
@@ -19,6 +17,8 @@ class Product < ActiveRecord::Base
 
   # Ensure that every product has a valid price, i.e. > 0.00
   validates_numericality_of :unit_price, :greater_than => 0.00
+
+
 
   # Search Products Functionality
   #

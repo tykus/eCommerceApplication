@@ -40,10 +40,6 @@
     <td><%= f.text_field :colour %></td>
   </tr>
   <tr class="field">
-    <td><%= f.label :size %> </td>
-    <td><%= f.text_field :size %></td>
-  </tr>
-  <tr class="field">
     <td><%= f.label :gender %></td>
     <td><%= collection_select(:product, :gender_id, @genders, :id, :gender, {:prompt => false })  %></td>
   </tr>

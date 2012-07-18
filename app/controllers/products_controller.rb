@@ -55,9 +55,6 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        redirect_to(@product, :notice => 'Success - product was created')
-
-
         format.html { redirect_to(@product, :notice => 'Product was successfully created.') }
         format.xml  { render :xml => @product, :status => :created, :location => @product }
       else

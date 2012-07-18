@@ -124,6 +124,12 @@ th {
 	background-color	: #f9bebe;
 }
 
+.label {
+	font-weight			: 600;
+	vertical-align		: top;
+	padding				: 0.5em;
+}
+
 /* MENU STYLES */
 #menu {
     background-color	: #eee;
@@ -134,11 +140,11 @@ th {
 
 #menu ul {
     list-style			: none;
+	margin-left			: -40px;
 }
 
 #menu li {
     background-color	: #eee;
-
 }
 
 #menu li a {
@@ -217,11 +223,46 @@ img .icon {
     z-index				:1;
 }
 
-.thumb img {
-    float				:left;
-    position			:absolute;
-    width				:150px;
-    height				:auto;
-    top					:-25px;
-    left				:-25px;
+.thumb img { /* ONLY FOR SEED IMAGES */
+    float				: left;
+    position			: absolute;
+    width				: 150px;
+    height				: auto;
+    top					: -25px;
+    left				: -25px;
 }
+
+
+/* STYLES FOR DISPLAYING PRODUCTS ON THE STORE INDEX */
+.item {
+	height				: 350px;
+	position			: relative;
+	width				: 180px;
+	background-color	: #fff;
+	border				: 1px solid #e2e2e2;
+	float				: left;
+	margin				: 10px 15px;
+	padding				: 5px;
+}
+
+.item_img {
+	border				: 0;
+	height				: 180px;
+	width				: 180px;
+	overflow			: hidden;
+ }
+ 
+ .item_img img {
+	border				: 0;
+	width				: 250px;
+	height				: auto;
+	padding				: 0;
+ }
+ 
+ .item_price {
+	position			: absolute;
+	bottom				: 0;
+	width				: 100%;
+	font-size			: 1.2em;
+	padding				: 0;
+ }

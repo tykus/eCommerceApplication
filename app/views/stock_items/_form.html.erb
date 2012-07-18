@@ -1,29 +1,32 @@
 <%= form_for(@stock_item) do |f| %>
+  <table>
+    <tr>
+      <td class="label"><%= f.label :product_id %></td>
+      <td><%= collection_select(:stock_item, :product_id, @products, :id, :product_name, {:prompt => false })  %></td>
+    </tr>
+    <tr>
+      <td class='label'><%= f.label :size_id %></td>
+      <td><%= collection_select(:stock_item, :size_id, @sizes, :id, :size_name, {:prompt => false })  %></td>
+    </tr>
+    <tr>
+      <td class='label'><%= f.label :quantity_in_stock %></td>
+      <td><%= f.text_field :quantity_in_stock %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><%= f.submit %></td>
+    </tr>
+  </table>
+
   <% if @stock_item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@stock_item.errors.count, "error") %> prohibited this stock_item from being saved:</h2>
+      <div id="error_explanation">
+        <h2><%= pluralize(@stock_item.errors.count, "error") %> prohibited this stock_item from being saved:</h2>
+           <ul>
+                <% @stock_item.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
-      <ul>
-      <% @stock_item.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :product_id %><br />
-    <%= f.text_field :product_id %>
-  </div>
-  <div class="field">
-    <%= f.label :size_id %><br />
-    <%= f.text_field :size_id %>
-  </div>
-  <div class="field">
-    <%= f.label :quantity_in_stock %><br />
-    <%= f.text_field :quantity_in_stock %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
