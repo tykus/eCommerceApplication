@@ -1,4 +1,8 @@
 ECommerceApplication::Application.routes.draw do
+  resources :line_items
+
+  resources :carts
+
   get "store/index"
 
   resources :stock_items
@@ -7,6 +11,7 @@ ECommerceApplication::Application.routes.draw do
 
   resources :products
 
+  match '/your_cart' => "carts#your_cart", :as => "your_cart"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

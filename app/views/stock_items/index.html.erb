@@ -22,6 +22,7 @@
     <td><%= link_to image_tag('icons/show.png', :alt => 'Show', :title => 'Show'), stock_item %></td>
     <td><%= link_to image_tag('icons/edit.png', :alt => 'Edit', :title => 'Edit'), edit_stock_item_path(stock_item) %></td>
     <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete'), stock_item, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to 'Add to Cart', line_items_path(:product_id=> product) %></td>
   </tr>
 <% end %>
 </table>
@@ -29,3 +30,4 @@
 <br />
 
 <%= link_to 'New Stock item', new_stock_item_path %>
+
