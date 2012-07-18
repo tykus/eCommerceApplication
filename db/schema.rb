@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120717193751) do
+ActiveRecord::Schema.define(:version => 20120717234447) do
 
   create_table "categories", :force => true do |t|
     t.string   "category_name"
@@ -45,5 +45,22 @@ ActiveRecord::Schema.define(:version => 20120717193751) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
   end
+
+  create_table "sizes", :force => true do |t|
+    t.string   "size_name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "stock_items", :force => true do |t|
+    t.integer  "product_id"
+    t.integer  "size_id"
+    t.integer  "quantity_in_stock"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "stock_items", ["product_id", "size_id"], :name => "index_stock_items_on_product_id_and_size_id", :unique => true
 
 end

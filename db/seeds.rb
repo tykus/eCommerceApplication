@@ -6,7 +6,7 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-# Seed data for Gender model
+# Seed data for Genders model
 Gender.delete_all
 Gender.create(:gender => 'boy',
               :icon_url => 'icons/m.png'
@@ -19,7 +19,63 @@ Gender.create(:gender => 'n/a',
 )
 
 
-# Seed data for the Product model
+# Seed data for Sizes model
+Size.delete_all
+Size.create(:size_name => '0000',
+            :description => 'newborn'
+)
+Size.create(:size_name => '000',
+            :description => '0-3 months'
+)
+Size.create(:size_name => '00',
+            :description => '3-6 months'
+)
+Size.create(:size_name => '0',
+            :description => '6-12 months'
+)
+Size.create(:size_name => '1',
+            :description => '1-2 years'
+)
+Size.create(:size_name => '2',
+            :description => '2-3 years'
+)
+Size.create(:size_name => '3',
+            :description => '3-4 years'
+)
+Size.create(:size_name => '4',
+            :description => '4-5 years'
+)
+Size.create(:size_name => '5',
+            :description => '5-6 years'
+)
+Size.create(:size_name => '6',
+            :description => '6-7 years'
+)
+Size.create(:size_name => '7',
+            :description => '7-8 years'
+)
+Size.create(:size_name => '8',
+            :description => '8-9 years'
+)
+
+
+
+
+#Seed data for Categories model
+Category.delete_all
+Category.create(:category_name => 'Layette')
+Category.create(:category_name => 'Baby Girl')
+Category.create(:category_name => 'Baby Boy')
+Category.create(:category_name => 'Baby Girl - 6 to 24 months')
+Category.create(:category_name => 'Baby Boy - 6 to 24 months')
+Category.create(:category_name => 'Christening')
+Category.create(:category_name => 'Girl - 2 to 8 years')
+Category.create(:category_name => 'Boy - 2 to 8 years')
+Category.create(:category_name => 'Boy - Holy Communion')
+Category.create(:category_name => 'Hats')
+
+
+# Seed data for the Products model
 Product.delete_all
 Product.create(:product_name =>'Range of Hats',
                :description => 'We stock a fabulous range of hats Cotton Pull on hats in all colours available from 0 to 3 Months Stripe and Stocking hats in different colours also',
@@ -171,15 +227,4 @@ Product.create(:product_name =>'Darcy Brown',
                :category_id => 1
 )
 
-Category.delete_all
-Category.create(:category_name => 'Layette')
-Category.create(:category_name => 'Baby Girl')
-Category.create(:category_name => 'Baby Boy')
-Category.create(:category_name => 'Baby Girl - 6 to 24 months')
-Category.create(:category_name => 'Baby Boy - 6 to 24 months')
-Category.create(:category_name => 'Christening')
-Category.create(:category_name => 'Girl - 2 to 8 years')
-Category.create(:category_name => 'Boy - 2 to 8 years')
-Category.create(:category_name => 'Boy - Holy Communion')
-Category.create(:category_name => 'Hats')
 

@@ -1,7 +1,15 @@
 class Product < ActiveRecord::Base
   # Every product belongs to exactly one category
   belongs_to :category
+
+  # Every product is for exactly one gender
   belongs_to :gender
+
+  # Associative Relationship with size model thru stock_items
+  has_many :stock_items
+  has_many :sizes, :through => :stock_items
+
+
 
   # Paperclip:
   has_attached_file :photo
