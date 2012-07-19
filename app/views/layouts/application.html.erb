@@ -16,6 +16,8 @@
             <li><%= link_to "Products", products_path %></li>
             <li><%= link_to "Categories", categories_path %></li>
             <li><%= link_to "Stock", stock_items_path %></li>
+            <li><%= link_to "Your Cart", :controller => "carts",
+                      :action => "your_cart" %></li>
         </ul>
         <!-- SEARCH FIELD -->
         <div id="search_form">
