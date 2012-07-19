@@ -15,12 +15,21 @@
   </tr>
 
 <% @products.each do |product| %>
-  <% if product.active %>
-    <tr>
-  <% else %>
-    <tr class="inactive">
-  <% end %>
-    <td class="thumb"><%= image_tag(product.picture) %></td>
+    <% if product.active %>
+        <tr>
+    <% else %>
+        <tr class="inactive">
+    <% end %>
+
+    <%  if product.photo.exists? then %>
+      <td><%= image_tag(product.photo.url(:small)) %></td>
+    <% else %>
+       <td class="thumb"><%= image_tag(product.picture) %></td>
+    <% end %>
+
+
+
+
     <td><%= product.product_name %></td>
     <td><%= product.description %></td>
     <td><%= number_to_currency(product.unit_price,:unit=>'€') %></td>

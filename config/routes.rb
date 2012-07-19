@@ -1,4 +1,7 @@
 ECommerceApplication::Application.routes.draw do
+
+  get "store/show"
+
   get "store/index"
 
   resources :stock_items
