@@ -1,14 +1,18 @@
-<h1>Welcome to KidZ Boutique</h1>
+<div id="cart">
+  <%= render 'cart' %>
+</div>
+
+<h1>Welcome to our Store</h1>
+<p id='notice'><%= notice %></p>
 <p>Here are our products!</p>
-<% @items.each do |item| %>
+<% @products.each do |product| %>
     <div class="item">
       <div class='item_img'>
-        <%= image_tag(item.product.picture) %>
+        <%= image_tag(product.picture) %>
       </div>
-      <h3><%= item.product.product_name %></h3>
-      <p><%= truncate(sanitize(item.product.description), :length => 90) %></p>
-      <p class='item_price'>
-        <%= number_to_currency(item.product.unit_price,:unit=>'€') %>
-      </p>
+      <h3><%= product.product_name %></h3>
+      <p><%= truncate(sanitize(product.description), :length => 90) %></p>
+      <p class='link'><%= link_to "more...", :controller => "store", :action => "show", :id => product.id %></p>
+      <p class='item_price'><%= number_to_currency(product.unit_price, :unit=>'&euro;') %></p>
     </div>
 <% end %>

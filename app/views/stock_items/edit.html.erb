@@ -1,6 +1,13 @@
 <h1>Editing '<%= @stock_item.product.product_name %>' Stock Item</h1>
 
+<%= image_tag(@stock_item.product.photo.url(:large), :alt => @stock_item.product.product_name, :title => @stock_item.product.product_name, :class => 'showProduct') %>
+
 <%= render 'form' %>
 
-<%= link_to 'Show', @stock_item %> |
-<%= link_to 'Back', stock_items_path %>
+<table class="nav_icons">
+  <tr>
+    <td><%= link_to image_tag('icons/back.png', :alt => "Back", :title => "Back"), stock_items_path %></td>
+    <td><%= link_to image_tag('icons/show.png', :alt => "Show", :title => "Edit"), @stock_item %></td>
+    <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete Stock Item'), @stock_item, :confirm => 'Are you sure you want to delete this stock item?', :method => :delete %></td>
+  </tr>
+</table>

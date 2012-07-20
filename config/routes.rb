@@ -1,11 +1,11 @@
 ECommerceApplication::Application.routes.draw do
   get "users/new"
+  get "store/index"
+  get "store/show"
 
   resources :line_items
 
   resources :carts
-
-  get "store/index"
 
   resources :stock_items
 
@@ -15,11 +15,10 @@ ECommerceApplication::Application.routes.draw do
 
   resources :users
 
-
-
   match '/your_cart' => "carts#your_cart", :as => "your_cart"
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -71,7 +70,7 @@ ECommerceApplication::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
    root :to => "store#index", as: 'store'
-  resources :sessions
+   resources :sessions
 
   # See how all your routes lay out with "rake routes"
 
