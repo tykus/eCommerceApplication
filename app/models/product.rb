@@ -9,6 +9,8 @@ class Product < ActiveRecord::Base
   has_many :stock_items, :dependent => :destroy
   has_many :sizes, :through => :stock_items, :foreign_key => :size_id
 
+
+
   # Paperclip:
   has_attached_file :photo,
                     :styles => { :small => "100x100#",
@@ -28,7 +30,7 @@ class Product < ActiveRecord::Base
   # @reference Laptop Shop Tutorial 2
   #
   belongs_to :user
-  has_many_ :line_items
+  has_many :line_items
 
 
   def self.search(search_query)

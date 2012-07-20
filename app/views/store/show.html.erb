@@ -9,7 +9,7 @@
 <% end %>
 
 <h3><%= @product.product_name %></h3>
-<%= form_for(@cart) do |f| %>
+
 <table>
   <tr>
     <td class='label'>Description</td>
@@ -31,14 +31,18 @@
     <td class='label'>Gender</td>
     <td><%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %></td>
   </tr>
-
   <tr>
-    <td><%= f.label :stock_item %>   </td>
-    <td><%= f.collection_select(:stock_item, :size_id, @stocks, :id, :id, {:prompt => false })  %></td>
+    <td>Sizes Available</td>
+    <td>
+      <% form_for LineItem.new do |f| %>
+          <%= select(:stock_item, :id, @data["stocks"].map{|s| [s.size.description, s.id]}) %>
+          <%= f.submit "Add to Cart" %>
+      <% end %>
+    </td>
   </tr>
   <tr>
     <td></td>
-    <td><%= f.submit %></td>
+    <td></td>
   </tr>
+
 </table>
-<% end %>

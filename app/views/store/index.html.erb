@@ -1,4 +1,9 @@
+<div id="cart">
+  <%= render 'cart' %>
+</div>
+
 <h1>Welcome to our Store</h1>
+<p id='notice'><%= notice %></p>
 <p>Here are our products!</p>
 <% @products.each do |product| %>
     <div class="item">
@@ -7,9 +12,7 @@
       </div>
       <h3><%= product.product_name %></h3>
       <p><%= truncate(sanitize(product.description), :length => 90) %></p>
-      <p><%= link_to "more...", :controller => "store", :action => "show", :id => product.id %></p>
-      <p class='item_price'>
-        <%= number_to_currency(product.unit_price,:unit=>'€') %>
-      </p>
+      <p class='link'><%= link_to "more...", :controller => "store", :action => "show", :id => product.id %></p>
+      <p class='item_price'><%= number_to_currency(product.unit_price, :unit=>'&euro;') %></p>
     </div>
 <% end %>

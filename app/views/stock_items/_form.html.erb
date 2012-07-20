@@ -6,7 +6,7 @@
     </tr>
     <tr>
       <td class='label'><%= f.label :size_id %></td>
-      <td><%= collection_select(:stock_item, :size_id, @sizes, :id, :size_name, {:prompt => false })  %></td>
+      <td><%= collection_select(:stock_item, :size_id, @sizes, :id, :description, {:prompt => false })  %></td>
     </tr>
     <tr>
       <td class='label'><%= f.label :quantity_in_stock %></td>

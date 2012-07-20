@@ -1,0 +1,5 @@
+<h3><%= link_to'View cart', cart_url(@cart) %></h3>
+<p><%= pluralize(@cart.count, 'item')   %>
+<br />
+Total : <%=  number_to_currency(@cart.total_price, :unit => '&euro;') %></p>
+</p>

@@ -1,12 +1,30 @@
 <p id="notice"><%= notice %></p>
-  <p id="notice"><%= notice %></p>
-  <h2>Your Cart</h2>
-  <ul>
-    <% for item in @cart.line_items %>
-        <li><%= item.quantity %> &times; <%= item.product.name %></li>
-    <% end %>
-  </ul>
+<h2>Your Cart</h2>
+<table class='carts'>
+  <tr>
+    <th></th>
+    <th>Product Name</th>
+    <th>Size</th>
+    <th>Quantity</th>
+    <th>Unit Price</th>
+  </tr>
+  <% for item in @cart.line_items %>
+      <tr>
+        <td><%= image_tag(item.stock_item.product.photo.url(:small)) %></td>
+        <td class='left'><%=  item.stock_item.product.product_name %></td>
+        <td class='center'><%=  item.stock_item.size.description %></td>
+        <td class='center'><%= item.quantity %></td>
+        <td class='right'><%=  number_to_currency(item.stock_item.product.unit_price, :unit=>'&euro;') %></td>
+      </tr>
+  <% end %>
 
-
-<%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', carts_path %>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class='right'>Cart Total:</td>
+    <td class='right'><%=  number_to_currency(@cart.total_price, :unit=>'&euro;') %></td>
+  </tr>
+</table>
+<%=  link_to 'Continue Shopping',store_index_path %>
+<%=  button_to 'Empty Cart',@cart, :method => :delete, :confirm => "Are you sure you want to do this?" %>

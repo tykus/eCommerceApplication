@@ -3,11 +3,15 @@ class StockItem < ActiveRecord::Base
   belongs_to :product
   belongs_to :size
 
+  has_many :line_items
+
   # Validation
   # Ensure that the product_id and size_id are present
   validates :product_id,
             :size_id,
             :presence => true
+
+  #validates_uniqueness_of :product_id, :scope=>:size_id
 
 
               # Ensure the amount of stock is greater than 0

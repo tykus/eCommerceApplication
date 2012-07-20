@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   # GET /products
   # GET /products.xml
+
   def index
     # Change the default
     @products = Product.search(params[:search_query])
@@ -27,9 +28,9 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
 
-    # Make available categories data to associate with product via dropdown menu in form
+    # Make available a collection of category object for collection_select form field
     @categories = Category.all
-    # Make available gender data to associate with product via dropdown menu in form
+    # Make available a collection of gender object for collection_select form field
     @genders = Gender.all
 
     respond_to do |format|
@@ -42,9 +43,9 @@ class ProductsController < ApplicationController
   def edit
     @product = Product.find(params[:id])
 
-    # Make available categories data to associate with product via dropdown menu in form
+    # Make available a collection of category object for collection_select form field
     @categories = Category.all
-    # Make available gender data to associate with product via dropdown menu in form
+    # Make available a collection of gender object for collection_select form field
     @genders = Gender.all
   end
 

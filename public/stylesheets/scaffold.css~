@@ -303,7 +303,6 @@ table .carts {
 	top				: 0;
 	right				: 0;
 	margin				: 5px;
-	background			: url('cart.png') no-repeat;
 
 }
 
