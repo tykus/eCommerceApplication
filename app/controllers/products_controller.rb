@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_filter :authenticate
   # GET /products
   # GET /products.xml
 
@@ -26,7 +27,7 @@ class ProductsController < ApplicationController
   # GET /products/new
   # GET /products/new.xml
   def new
-    @product = Product.new
+    @product = current_user.Product.new
 
     # Make available a collection of category object for collection_select form field
     @categories = Category.all
