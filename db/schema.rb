@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120718224538) do
+ActiveRecord::Schema.define(:version => 20120720082440) do
 
   create_table "carts", :force => true do |t|
     t.datetime "created_at"
@@ -56,7 +56,18 @@ ActiveRecord::Schema.define(:version => 20120718224538) do
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
+    t.integer  "user_id"
   end
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "sizes", :force => true do |t|
     t.string   "size_name"
@@ -71,8 +82,16 @@ ActiveRecord::Schema.define(:version => 20120718224538) do
     t.integer  "quantity_in_stock"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   add_index "stock_items", ["product_id", "size_id"], :name => "index_stock_items_on_product_id_and_size_id", :unique => true
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "hashed_password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

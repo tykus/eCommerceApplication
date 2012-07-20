@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_filter :authenticate
   # GET /products
   # GET /products.xml
   def index
@@ -25,7 +26,7 @@ class ProductsController < ApplicationController
   # GET /products/new
   # GET /products/new.xml
   def new
-    @product = Product.new
+    @product = current_user.Product.new
 
     # Make available categories data to associate with product via dropdown menu in form
     @categories = Category.all

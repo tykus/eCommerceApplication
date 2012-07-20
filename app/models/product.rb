@@ -25,8 +25,8 @@ class Product < ActiveRecord::Base
   # @reference Laptop Shop Tutorial 2
   #
   belongs_to :user
-  has_many_ :line_items
-
+  has_many :line_items
+  belongs_to :user
 
   def self.search(search_query)
     if search_query
