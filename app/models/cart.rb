@@ -13,10 +13,6 @@ class Cart < ActiveRecord::Base
     current_item
   end
 
-
-
-  #
-  # total_price
   # @reference: laptop_shop tutorial 4
   #
   def total_price

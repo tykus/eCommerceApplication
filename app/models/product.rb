@@ -9,6 +9,10 @@ class Product < ActiveRecord::Base
   has_many :stock_items, :dependent => :destroy
   has_many :sizes, :through => :stock_items, :foreign_key => :size_id
 
+  # Associative relationship with orders model through line items
+  has_many  :line_items
+  has_many  :orders, :through => :line_items
+
 
 
   # Paperclip:
@@ -41,5 +45,15 @@ class Product < ActiveRecord::Base
     end
   end
 
+
+  # Store search
+  # @author: Brian
+  def self.store_search(search_query)
+    if search_query
+      find(:all, :conditions => ["active='t' AND product_name LIKE ?", "%#{search_query}%"])
+    else
+      find(:all)
+    end
+  end
 end
 

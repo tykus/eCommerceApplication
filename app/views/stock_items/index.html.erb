@@ -18,7 +18,7 @@
 <% @stock_items.each do |stock_item| %>
   <tr>
     <td><%= stock_item.id %></td>
-    <td><%= image_tag(stock_item.product.picture, :title => stock_item.product.product_name, :class => 'thumb') %></td>
+    <td><%= image_tag(stock_item.product.photo.url(:small), :title => stock_item.product.product_name, :class => 'thumb') %></td>
     <td><%= stock_item.product.product_name %></td>
     <td><%= stock_item.size.size_name %></td>
     <td><%= stock_item.quantity_in_stock %></td>
