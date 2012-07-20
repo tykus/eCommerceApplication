@@ -77,196 +77,42 @@ Category.create(:category_name => 'Hats')
 
 # Seed data for the Products model
 Product.delete_all
-Product.create(:product_name =>'Range of Hats',
-               :description => 'We stock a fabulous range of hats Cotton Pull on hats in all colours available from 0 to 3 Months Stripe and Stocking hats in different colours also',
-               :unit_price => 6.95,
-               :picture => 'seeds/129.jpg',
-               :colour => 'multi',
-               :gender_id => 3,
-               :active => true,
-               :category_id => 10
-)
-Product.create(:product_name =>'Phister & Philina',
-               :description => 'Purple & Lime Cotton Dress & Legging. Mayoral Cardigans to compliment outfits from 13.95 in all colours', 
-               :unit_price => 49.95, 
-               :picture => 'seeds/227.jpg', 
-               :colour => 'purple',
-               :gender_id => 2, 
-               :active => true, 
-               :category_id => 2
-)
-Product.create(:product_name =>'Mayoral',
-               :description => 'Coral waisted dress with pleat effect.',
-               :unit_price => 34.95, 
-               :picture => 'seeds/266.jpg', 
-               :colour => 'pink',
-               :gender_id => 2, 
-               :active => true, 
-               :category_id => 7
-)
-Product.create(:product_name =>'Mayoral',
-               :description => 'Pretty navy & white polka dot dress. Available in coral also.',
-               :unit_price => 41.95, 
-               :picture => 'seeds/267.jpg', 
-               :colour => 'white',
-               :gender_id => 2, 
-               :active => true, 
-               :category_id => 7
-)
-Product.create(:product_name =>'Loff', 
-               :description => 'Puffball dress & leggings in Coral with Mayoral cardigan to match. (64.95 for set)',
-               :unit_price => 64.95,
-               :picture => 'seeds/272.jpg',
-               :colour => 'pink',
-               :gender_id => 2, 
-               :active => true, 
-               :category_id => 7
-)
-Product.create(:product_name =>'Tucha', 
-               :description => 'Orange & lime stripe romper & available in two piece also.', 
-               :unit_price => 29.95,
-               :picture => 'seeds/291.jpg',
-               :colour => 'orange',
-               :gender_id => 3, 
-               :active => true, 
-               :category_id => 1
-)
-Product.create(:product_name =>'Tucha',
-               :description => 'New Baby Range Velour red, white & navy romper. Available in two piece suit also.',
-               :unit_price => 29.95,
-               :picture => 'seeds/292.jpg',
-               :colour => 'red',
-               :gender_id => 3,
-               :active => true,
-               :category_id => 1
-)
-Product.create(:product_name =>'Tucha',
-               :description => 'Cerise & lime velour two piece.',
-               :unit_price => 31.95,
-               :picture => 'seeds/295.jpg',
-               :colour => 'pink',
-               :gender_id => 2,
-               :active => true,
-               :category_id => 2
-)
-Product.create(:product_name =>'Tucha',
-               :description => 'Turquoise & lime velour two piece.',
-               :unit_price => 31.95,
-               :picture => 'seeds/297.jpg',
-               :colour => 'green',
-               :gender_id => 3,
-               :active => true,
-               :category_id => 1
-)
-Product.create(:product_name =>'Trocadero',
-               :description => 'Pink floral dress with bows on shoulders.',
-               :unit_price => 41.95,
-               :picture => 'seeds/304.jpg',
-               :colour => 'pink',
-               :gender_id => 2,
-               :active => true,
-               :category_id => 7
-)
-Product.create(:product_name =>'Dodi-Petto',
-               :description => 'Mid Blue & white stripe sweatshirt with white collar and cotton trousers to match.',
-               :unit_price => 41.95,
-               :picture => 'seeds/314.jpg',
-               :colour => 'blue',
-               :gender_id => 1,
-               :active => true,
-               :category_id => 8
-)
-Product.create(:product_name =>'Du Du',
-               :description => 'Red velour dresses with multicoloured stripped tights. Ideal Christmas dress - 29.95 for dress & tights matching.',
-               :unit_price => 29.95,
-               :picture => 'seeds/367.jpg',
-               :colour => 'red',
-               :gender_id => 2,
-               :active => true,
-               :category_id => 2
-)
-Product.create(:product_name =>'First Occasion',
-               :description => 'Silk designed Christening robe with matching designed bonnet.',
-               :unit_price => 104.95,
-               :picture => 'seeds/376.jpg',
-               :colour => 'white',
-               :gender_id => 3,
-               :active => true,
-               :category_id => 1
-)
-Product.create(:product_name =>'First Occasion',
-               :description => 'Pearl & Se-quince silk gown with bonnet matching.',
-               :unit_price => 104.95,
-               :picture => 'seeds/377.jpg',
-               :colour => 'white',
-               :gender_id => 3,
-               :active => true,
-               :category_id => 1
-)
-Product.create(:product_name =>'Darcy Brown',
-               :description => 'Cerise pink velvet skirt with netting & pink cotton self stripe top with bow.',
-               :unit_price => 79.95,
-               :picture => 'seeds/386.jpg',
-               :colour => 'pink',
-               :gender_id => 2,
-               :active => true,
-               :category_id => 2
-)
+Product.create(:product_name => 'Mayoral', :description => 'Dress, Top & Leggings\r\n(Socks & Shoes Optional)', :unit_price => 26.95, :colour => 'red', :gender_id => 2, :active => 't', :category_id => 7, :photo_file_name => '118.jpg', :photo_content_type => 'image/jpeg', :photo_file_size => 82677)
+Product.create(:product_name => 'Soft Velour Layette', :description => 'Cool cotton for the warmer days', :unit_price => 21.95, :colour => 'yellow', :gender_id => 3, :active => 't', :category_id => 1, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 61648)
+Product.create(:product_name => 'Baby Girl Velour Sets', :description => 'New Born to 6 months\r\nPrices for complete set', :unit_price => 19.95, :colour => 'pink', :gender_id => 2, :active => 't', :category_id => 2, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 50842)
+Product.create(:product_name => 'Mayoral', :description => 'Cotton dress and legging sets', :unit_price => 15.99, :colour => 'white', :gender_id => 2, :active => 't', :category_id => 4, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 55554)
+Product.create(:product_name => 'Sun Dresses', :description => 'Purple Stripe Cotton dress', :unit_price => 34.95, :colour => 'purple', :gender_id => 2, :active => 'f', :category_id => 7, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 68749)
+Product.create(:product_name => 'Sarah Louise Robe', :description => 'Chiffon dress with ornate design and bonnet to match.', :unit_price => 24.95, :colour => 'white', :gender_id => 3, :active => 't', :category_id => 6, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 57209)
+Product.create(:product_name => 'Classic Robe', :description => 'Classic robe for baby boy or girl with celtic cross and hat', :unit_price => 119.95, :colour => 'white', :gender_id => 3, :active => 't', :category_id => 6, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 58285)
+Product.create(:product_name => 'Red & White Check Dress', :description => 'Red & white check dress & panties', :unit_price => 29.95, :colour => 'red', :gender_id => 2, :active => 't', :category_id => 2, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 97555)
+Product.create(:product_name => 'Romper Sets', :description => 'Navy lined trousers with cotton navy & cream sweatshirt to match', :unit_price => 34.95, :colour => 'blue', :gender_id => 1, :active => 't', :category_id => 3, :photo_file_name => 'layette.jpeg', :photo_content_type => 'image/jpeg', :photo_file_size => 140705)
+
 
 # Create Stock Items for the Store
-StockItem.create(:product_id => 1,
-                 :size_id => 1,
-                 :quantity_in_stock => 15
-)
-StockItem.create(:product_id => 1,
-                 :size_id => 2,
-                 :quantity_in_stock => 12
-)
-StockItem.create(:product_id => 1,
-                 :size_id => 3,
-                 :quantity_in_stock => 3
-)
-StockItem.create(:product_id => 2,
-                 :size_id => 3,
-                 :quantity_in_stock => 1
-)
-StockItem.create(:product_id => 2,
-                 :size_id => 4,
-                 :quantity_in_stock => 3
-)
-StockItem.create(:product_id => 2,
-                 :size_id => 5,
-                 :quantity_in_stock => 2
-)
-StockItem.create(:product_id => 3,
-                 :size_id => 6,
-                 :quantity_in_stock => 8
-)
-StockItem.create(:product_id => 3,
-                 :size_id => 7,
-                 :quantity_in_stock => 1
-)
-StockItem.create(:product_id => 3,
-                 :size_id => 8,
-                 :quantity_in_stock => 4
-)
-StockItem.create(:product_id => 3,
-                 :size_id => 9,
-                 :quantity_in_stock => 5
-)
-StockItem.create(:product_id => 3,
-                 :size_id => 10,
-                 :quantity_in_stock => 3
-)
-StockItem.create(:product_id => 4,
-                 :size_id => 6,
-                 :quantity_in_stock => 3
-)
-StockItem.create(:product_id => 5,
-                 :size_id => 10,
-                 :quantity_in_stock => 3
-)
-StockItem.create(:product_id => 1,
-                 :size_id => 4,
-                 :quantity_in_stock => 4
-)
+StockItem.create(:product_id => 1, :size_id => 7, :quantity_in_stock => 2)
+StockItem.create(:product_id => 1, :size_id => 6, :quantity_in_stock => 4)
+StockItem.create(:product_id => 2, :size_id => 1, :quantity_in_stock => 4)
+StockItem.create(:product_id => 2, :size_id => 2, :quantity_in_stock => 5)
+StockItem.create(:product_id => 2, :size_id => 3, :quantity_in_stock => 10)
+StockItem.create(:product_id => 1, :size_id => 8, :quantity_in_stock => 6)
+StockItem.create(:product_id => 1, :size_id => 9, :quantity_in_stock => 2)
+StockItem.create(:product_id => 3, :size_id => 1, :quantity_in_stock => 17)
+StockItem.create(:product_id => 3, :size_id => 2, :quantity_in_stock => 15)
+StockItem.create(:product_id => 3, :size_id => 3, :quantity_in_stock => 4)
+StockItem.create(:product_id => 4, :size_id => 4, :quantity_in_stock => 5)
+StockItem.create(:product_id => 4, :size_id => 5, :quantity_in_stock => 8)
+StockItem.create(:product_id => 5, :size_id => 6, :quantity_in_stock => 12)
+StockItem.create(:product_id => 5, :size_id => 9, :quantity_in_stock => 2)
+StockItem.create(:product_id => 5, :size_id => 11, :quantity_in_stock => 2)
+StockItem.create(:product_id => 6, :size_id => 1, :quantity_in_stock => 2)
+StockItem.create(:product_id => 6, :size_id => 2, :quantity_in_stock => 2)
+StockItem.create(:product_id => 6, :size_id => 3, :quantity_in_stock => 3)
+StockItem.create(:product_id => 7, :size_id => 1, :quantity_in_stock => 1)
+StockItem.create(:product_id => 1, :size_id => 2, :quantity_in_stock => 5)
+StockItem.create(:product_id => 7, :size_id => 3, :quantity_in_stock => 0)
+StockItem.create(:product_id => 8, :size_id => 2, :quantity_in_stock => 5)
+StockItem.create(:product_id => 8, :size_id => 4, :quantity_in_stock => 2)
+StockItem.create(:product_id => 9, :size_id => 2, :quantity_in_stock => 2)
+StockItem.create(:product_id => 9, :size_id => 4, :quantity_in_stock => 2)
+StockItem.create(:product_id => 9, :size_id => 3, :quantity_in_stock => 0)
+
