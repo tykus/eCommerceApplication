@@ -20,7 +20,8 @@
             <li><%= link_to "Stock", stock_items_path %></li>
             <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>
           <% if logged_in? %>
-             <li><%= link_to 'Logout', logout_path %></li>
+             <li><%= link_to "Logout", logout_path %></li>
+             <li><%= link_to "Create User", new_user_path %></li>
            </ul>
               <%= current_user.email %>
           <% else %>

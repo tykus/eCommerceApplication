@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails eCommerceApplication: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="1a93836a-9f9f-4030-9c3a-6e6f6ee85c90">
+  <data-source source="LOCAL" name="Rails eCommerceApplication: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="5b6a6379-365f-492a-a56b-62e67261d4c6">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:/home/brian/src/eCommerceApplication/db/test.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine40/config/jdbc-drivers/xerial-sqlite-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine40/config/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails eCommerceApplication: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="bf93e4f8-3dd3-4358-a48f-71443f2a688d">
     <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
     <jdbc-url>jdbc:sqlite:/home/brian/src/eCommerceApplication/db/development.sqlite3</jdbc-url>
     <libraries>
@@ -113,17 +125,5 @@
       <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <primary-key columns="id" />
     </table>
-  </data-source>
-  <data-source source="LOCAL" name="Rails eCommerceApplication: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="08116481-eab0-4550-adc6-ebb16168def6">
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:/home/brian/src/eCommerceApplication/db/test.sqlite3</jdbc-url>
-    <libraries>
-      <library>
-        <url>file://$USER_HOME$/.RubyMine40/config/jdbc-drivers/xerial-sqlite-license.txt</url>
-      </library>
-      <library>
-        <url>file://$USER_HOME$/.RubyMine40/config/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
-      </library>
-    </libraries>
   </data-source>
 </component>
