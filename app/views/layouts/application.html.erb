@@ -8,15 +8,11 @@
 </head>
 <body>
 <div id="container">
-<<<<<<< HEAD
-  <div id='header'>
-=======
     <div id="header">
       <%= link_to image_tag('header.png'), store_index_path %>
     </div>
->>>>>>> cd5589f2ce8089c5bd569e837f8def681f6b5b30
 
-  </div>
+
     <!-- MENU -->
     <div id="menu">
         <ul>
@@ -25,7 +21,7 @@
             <li><%= link_to "Stock", stock_items_path %></li>
             <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>
           <% if logged_in? %>
-             <li><%= link_to 'Logout', logout_path %></li>
+             <li><%= link_to "Logout", logout_path %></li>
              <li><%= link_to "Create User", new_user_path %></li>
            </ul>
               <%= current_user.email %>

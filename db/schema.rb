@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120720151817) do
+ActiveRecord::Schema.define(:version => 20120722180007) do
 
   create_table "carts", :force => true do |t|
     t.datetime "created_at"
@@ -97,6 +97,8 @@ ActiveRecord::Schema.define(:version => 20120720151817) do
     t.string   "hashed_password"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "salt"
+    t.boolean  "admin",           :default => false
   end
 
 end
