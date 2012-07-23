@@ -1,4 +1,7 @@
 class StockItemsController < ApplicationController
+  # Only visible to admin users
+  before_filter :authenticate
+
   # GET /stock_items
   # GET /stock_items.xml
   def index

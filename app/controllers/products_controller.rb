@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
+  # Only visible to admin users
   before_filter :authenticate
+
   # GET /products
   # GET /products.xml
 
@@ -27,7 +29,7 @@ class ProductsController < ApplicationController
   # GET /products/new
   # GET /products/new.xml
   def new
-    @product = current_user.Product.new
+    @product = Product.new
 
     # Make available a collection of category object for collection_select form field
     @categories = Category.all
@@ -53,8 +55,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.xml
   def create
-    @product = Product.new(params[:product])
-
+     @product = current_user.products.new(params[:product])
     respond_to do |format|
       if @product.save
         format.html { redirect_to(@product, :notice => 'Product was successfully created.') }

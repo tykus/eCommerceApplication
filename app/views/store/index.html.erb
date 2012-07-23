@@ -1,6 +1,12 @@
-<div id="cart">
-  <%= render 'cart' %>
-</div>
+  <% if logged_in? %>
+    <div id="cart">
+      <%= render 'cart' %>
+    </div>
+  <% else %>
+      <div id="login">
+      <%= render '/sessions/login' %>
+      </div>
+  <% end %>
 
 <h1>Welcome to our Store</h1>
 <p id='notice'><%= notice %></p>
@@ -10,8 +16,7 @@
       <div class='item_img'>
         <%= link_to image_tag(product.photo.url(:store)), :controller => "store", :action => "show", :id => product.id %>
       </div>
-      <h3><%= product.product_name %></h3>
-      <p><%= truncate(sanitize(product.description), :length => 100) %></p>
+      <h3><%= truncate(sanitize(product.product_name), :length => 20) %></h3>
       <p class='item_price'><%= number_to_currency(product.unit_price, :unit=>'&euro;') %></p>
     </div>
 <% end %>

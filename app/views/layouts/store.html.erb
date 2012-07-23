@@ -16,20 +16,23 @@
   <div id="menu">
     <ul>
       <li><%= link_to "Home", store_index_path %></li>
-    </ul>
-    <!-- SEARCH FIELD -->
-    <div id="search_form">
-      <% form_tag store_path, :method => 'get' do %>
-          <p>
-            <%=  text_field_tag :search_query, params[:search_query] %>
-            <%=  submit_tag "Search Products", :name => nil,
-                            :class => "button" %>
-          </p>
+      <% if logged_in? %>
+          <li><%=  link_to "Profile", logout_path %></li>
+          <li><%=  link_to "Orders History", orders_path %></li>
+          <li><%=  link_to "Logout", logout_path %></li>
       <% end %>
-    </div>
+    </ul>
   </div>
 
-
+  <div id="search_form">
+    <% form_tag store_path, :method => 'get' do %>
+        <p>
+            <%= select(:category, params[:category], Category.all.map{|cat| [cat.category_name, cat.id]}) %>
+            <%=  text_field_tag :search_query, params[:search_query] %>
+            <%=  submit_tag "Find Products", :name => nil, :class => "button" %>
+        </p>
+      <% end %>
+  </div>
 
   <%= yield %>
 

@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.xml
   def index
-    @orders = Order.all
+    @orders = current_user.orders.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +14,6 @@ class OrdersController < ApplicationController
   # GET /orders/1.xml
   def show
     @order = Order.find(params[:id])
-
 
     @line_item = LineItem.where("order_id=?", @order.id)
 
@@ -50,14 +49,14 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.xml
   def create
-    @order = Order.new(params[:order])
+    @order = current_user.orders.new(params[:order])
     @order.add_line_items_from_cart(current_cart)
 
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        format.html { redirect_to(store_url, :notice => 'Thank you for your order') }
+        format.html { redirect_to(:controller => 'store', :action => 'thank_you') }
         format.xml  { render :xml => @order, :status => :created, :location => @order }
       else
         @cart = current_cart

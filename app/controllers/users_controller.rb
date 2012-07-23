@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+
+  #
+  # @reference: laptop_shop tutorial 2
+  #
+
   def new
     @user = User.new
   end

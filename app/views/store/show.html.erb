@@ -1,9 +1,23 @@
+<% if logged_in? %>
+    <div id="cart">
+      <%= render 'cart' %>
+    </div>
+<% else %>
+    <div id="login">
+      <%=
+          # Show login form
+          render '/sessions/login'
+      %>
+    </div>
+<% end %>
+
+
 <h1>Product View</h1>
 <%= image_tag(@product.photo.url(:large), :class => 'showProduct') %>
 
 <h3><%= @product.product_name %></h3>
 
-<table>
+<table class='products'>
   <tr>
     <td class='label'>Description</td>
     <td><%= @product.description %></td>
@@ -25,17 +39,20 @@
     <td><%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %></td>
   </tr>
   <tr>
-    <td>Sizes Available</td>
+    <td class='label'>Sizes Available</td>
     <td>
-      <% form_for LineItem.new do |f| %>
-          <%= select(:stock_item, :id, @data["stocks"].map{|s| [s.size.description, s.id]}) %>
-          <%= f.submit "Add to Cart" %>
+      <% if logged_in? %>
+          <% form_for LineItem.new do |f| %>
+              <%= select(:stock_item, :id, @data["stocks"].map{|s| [s.size.description, s.id]}) %>
+              <%= f.submit "Add to Cart" %>
+          <% end %>
+      <% else %>
+          <% @data["stocks"].each do |s| %>
+              <%= s.size.description %>
+              <br />
+          <% end %>
+          <p class="notice">You must be logged in to add items to cart.</p>
       <% end %>
     </td>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-
 </table>

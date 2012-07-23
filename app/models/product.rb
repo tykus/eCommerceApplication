@@ -5,6 +5,9 @@ class Product < ActiveRecord::Base
   # Every product is for exactly one gender
   belongs_to :gender
 
+  # Need to be able to record the user who creates the product
+  belongs_to :user
+
   # Associative Relationship with size model through stock_items
   has_many :stock_items, :dependent => :destroy
   has_many :sizes, :through => :stock_items, :foreign_key => :size_id
@@ -18,8 +21,8 @@ class Product < ActiveRecord::Base
   # Paperclip:
   has_attached_file :photo,
                     :styles => { :small => "100x100#",
-                                 :store => "180x180>",
-                                 :large => "400x400" }
+                                 :store => "180x180#",
+                                 :large => "400x400#" }
 
   # Ensure that the product is created with a product_name
   validates :product_name, :presence => true
@@ -50,6 +53,7 @@ class Product < ActiveRecord::Base
   def self.store_search(search_query)
     if search_query
       find(:all, :conditions => ["active='t' AND product_name LIKE ?", "%#{search_query}%"])
+      #find(:all, :conditions => ["active='t' AND product_name LIKE ? AND category_id=?", "%#{search_query}%", :category])
     else
       find(:all)
     end

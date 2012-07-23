@@ -4,6 +4,8 @@ ECommerceApplication::Application.routes.draw do
   get "users/new"
   get "store/index"
   get "store/show"
+  get "store/thank_you"
+  get "store/register"
 
   resources :line_items
   resources :orders
@@ -68,7 +70,7 @@ ECommerceApplication::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "store#index", as: 'store'
+   root :to => "store#index", :as =>'store'
 
   # See how all your routes lay out with "rake routes"
 

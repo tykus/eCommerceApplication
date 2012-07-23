@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails eCommerceApplication: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="537bdfc6-0788-40f7-b645-15693f99d007">
+  <data-source source="LOCAL" name="Rails eCommerceApplication: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="1a93836a-9f9f-4030-9c3a-6e6f6ee85c90">
     <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
     <jdbc-url>jdbc:sqlite:/home/brian/src/eCommerceApplication/db/development.sqlite3</jdbc-url>
     <libraries>
@@ -36,20 +36,26 @@
     </table>
     <table name="line_items" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
-      <column name="product_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <column name="stock_item_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
       <column name="cart_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
       <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="quantity" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <column name="order_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
       <primary-key columns="id" />
     </table>
-    <table name="orders" schema="" catalog="" type="TABLE" />
+    <table name="orders" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <primary-key columns="id" />
+    </table>
     <table name="products" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
       <column name="product_name" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="description" sqlType="TEXT" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="unit_price" sqlType="DECIMAL" length="2000000000" precision="10" nullable="true" jdbcType="12" />
-      <column name="picture" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="colour" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="gender_id" sqlType="INTEGER(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="active" sqlType="BOOLEAN" length="2000000000" precision="10" nullable="true" jdbcType="12" />
@@ -59,11 +65,22 @@
       <column name="photo_file_name" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="photo_content_type" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="photo_file_size" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
       <primary-key columns="id" />
     </table>
     <table name="schema_migrations" schema="" catalog="" type="TABLE">
       <column name="version" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
       <index name="unique_schema_migrations" unique="true" columns="version" />
+    </table>
+    <table name="sessions" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="session_id" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="data" sqlType="TEXT" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <primary-key columns="id" />
+      <index name="index_sessions_on_updated_at" unique="false" columns="updated_at" />
+      <index name="index_sessions_on_session_id" unique="false" columns="session_id" />
     </table>
     <table name="sizes" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
@@ -84,11 +101,20 @@
       <column name="quantity_in_stock" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
       <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
       <primary-key columns="id" />
       <index name="index_stock_items_on_product_id_and_size_id" unique="true" columns="product_id,size_id" />
     </table>
+    <table name="users" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="email" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="hashed_password" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <primary-key columns="id" />
+    </table>
   </data-source>
-  <data-source source="LOCAL" name="Rails eCommerceApplication: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="8aedb9c4-7f31-458e-b658-432116c41d83">
+  <data-source source="LOCAL" name="Rails eCommerceApplication: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="08116481-eab0-4550-adc6-ebb16168def6">
     <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
     <jdbc-url>jdbc:sqlite:/home/brian/src/eCommerceApplication/db/test.sqlite3</jdbc-url>
     <libraries>

@@ -11,10 +11,10 @@ class StockItem < ActiveRecord::Base
             :size_id,
             :presence => true
 
-  #validates_uniqueness_of :product_id, :scope=>:size_id
+  validates_uniqueness_of :product_id, :scope=>:size_id
 
 
-              # Ensure the amount of stock is greater than 0
+  # Ensure the amount of stock is greater than 0
   # validates_numericality_of :quantity_in_stock, :greater_than_or_equal_to => 0
 
 end

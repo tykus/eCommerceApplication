@@ -1,4 +1,6 @@
 class Cart < ActiveRecord::Base
+
+  belongs_to :user
   has_many :line_items, :dependent => :destroy
 
 
@@ -13,8 +15,9 @@ class Cart < ActiveRecord::Base
     current_item
   end
 
+  # calculate total price for products in cart
   # @reference: laptop_shop tutorial 4
-  #
+
   def total_price
 
     total=0

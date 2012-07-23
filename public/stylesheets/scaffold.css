@@ -7,6 +7,7 @@ body, p, ol, ul, td {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size:   13px;
     line-height: 18px;
+    height              : 100%;
 }
 
 pre {
@@ -67,16 +68,19 @@ div.field, div.actions {
 
 #container {
     border				: 1px solid #dcdcdc;
-    background-color			: #ffffff;
+    background-color	: #ffffff;
+    display             : block;
+    height              : 100%;
     margin				: 0 auto;
-    overflow				: auto;
+    overflow			: hidden;
     padding				: 20px;
 	position			: relative;
     width				: 900px;
+
 }
 
 #header {
-    height          			: 120px;
+    height          	: 150px;
 }
 
 .clearfix {
@@ -90,74 +94,68 @@ h3 {
 }
 
 p a {
-    line-height				: 32px;
-    padding-left			: 0.5em;
+    line-height			: 32px;
+    padding-left		: 0.5em;
     display				: block;
     margin				: 0;
     height				: 32px;
 }
 
-
-table .products {
-    margin				: 0 auto;
-    width				: 90%;
-}
-
 .list_line_odd {
-    background-color			: #eeeeee;
+    background-color	: #eeeeee;
 }
 
 
 .list_line_even {
-    background-color			: #dcdcdc;
+    background-color	: #dcdcdc;
 }
 
 tr {
-	border-bottom			: 1px dotted #333;
+	border-bottom		: 1px dotted #333;
 }
 
 th {
-	border-bottom			: 1px solid #333;
+	border-bottom		: 1px solid #333;
 }
 
 .inactive {
-	background-color		: #f9bebe;
+	background-color	: #f9bebe;
 }
 
 .label {
 	font-weight			: 600;
-	vertical-align			: top;
+	vertical-align		: top;
 	padding				: 0.5em;
 }
 
 
 /* MENU STYLES */
 #menu {
-    background-color			: #eee;
+    background-color	: #eee;
     height				: 50px;
     padding				: 0;
     width				: 100%;
 }
 
 #menu ul {
-    list-style				: none;
+    list-style			: none;
 	margin-left			: -40px;
 }
 
 #menu li {
-    background-color			: #eee;
+    background-color	: #eee;
 }
 
 #menu li a {
-    border-right			: 1px solid #fff;
+    border-right		: 1px solid #fff;
     color				: #333;
     display				: block;
     height				: 50px;
     float				: left;
-    line-height				: 50px;
-    margin-right			: 0.1em;
-    text-align				: center;
-    text-decoration			: none;
+    line-height			: 50px;
+    margin-right		: 0.1em;
+    text-align			: center;
+    text-decoration		: none;
     width				: 9em;
 }
 
@@ -167,15 +165,17 @@ th {
 }
 
 #menu li a:hover {
-    background-color			: #f60;
+    background-color	: #f60;
     color				: #eee;
 }
 
 
 /* SEARCH FIELD */
 #search_form {
-    float				: right;
-    padding				: 0 10px;
+    border              : 1px dashed #e2e2e2;
+    margin              : 5px auto;
+    padding				: 10px;
+    overflow            : auto;
 }
 
 #search_form input {
@@ -183,19 +183,19 @@ th {
 }
 
 #search_form .button {
-    background-color			: #f60;
+    background      	: url('../images/button_bg.jpg') repeat-x;
     border				: 1px solid #dcdcdc;
-    color				: #ffffff;
+    color				: #333333;
 }
 
 #search_form .button:hover {
-    background-color			: #f90;
+    background      	: url('../images/button_hover.jpg') repeat-x;
 }
 
 /* IMAGE STYLES */
 
 img {
-	background-color		: #fff;
+	background-color	: #fff;
 	border				: 1px solid #dcdcdc;
 	padding				: 5px;
 }
@@ -208,64 +208,28 @@ img .icon {
 }
 .showProduct {
     float				: right;
-    margin-left				: 25px;
+    margin-left			: 25px;
 	width				: 300px;
 	height				: auto;
-}
-
-.thumb {
-    display				:block;
-    float				:left;
-    width				:100px;
-    height				:100px;
-    line-height				:100px;
-    overflow				:hidden;
-    position				:relative;
-    z-index				:1;
-}
-
-.thumb img { /* ONLY FOR SEED IMAGES */
-    float				: left;
-    position				: absolute;
-    width				: 150px;
-    height				: auto;
-    top					: -25px;
-    left				: -25px;
 }
 
 
 /* STYLES FOR DISPLAYING PRODUCTS ON THE STORE INDEX */
 .item {
-	height				: 350px;
+	height				: 250px;
 	position			: relative;
 	width				: 180px;
-	background-color		: #fff;
+	background-color	: #fff;
 	border				: 1px solid #e2e2e2;
 	float				: left;
 	margin				: 10px 15px;
 	padding				: 5px;
 }
-
-.item_img {
-	border				: 0;
-	height				: 180px;
-	width				: 180px;
-	overflow			: hidden;
- }
  
- .item_img img {
-	border				: 0;
-	width				: 250px;
-	height				: auto;
-	padding				: 0;
- }
- 
- .item_price {
-	position			: absolute;
-	bottom				: 0;
+.item_price {
 	font-size			: 1.2em;
 	padding				: 0;
- }
+}
 
 
 .link {
@@ -278,7 +242,7 @@ img .icon {
 /* GENERAL TABLE STYLES */
 
 .left  {
-    	text-align 			: left;
+    text-align 			: left;
 }
 .right {
 	text-align			: right;
@@ -287,29 +251,52 @@ img .icon {
 	text-align			: center;
 }
 
-table .carts {
-	width				: 80%;
-	margin				: 0 auto;
+table {
+    clear               : both;
+    width               : 90%;
+    margin              : 0 auto;
+
 }
 
-td .total {
+table .products {
+    width               : 50%;
+    float               : left;
+}
+
+
+.total {
     text-align			: right;
-    font-weight         : 600;
+    font-weight         : 700;
     border-top          : 1px solid #333;
 }
 
 
-/* CART PANEL */
+/* CART/LOGIN PANEL */
 
 #cart {
-	width				: 200px;
-	height				: 120px;
-	border				: 1px solid #eeeeee;
+    background			: url('../images/cart.jpg') no-repeat;
+    border				: 1px solid #eeeeee;
+	height				: 100px;
+    margin				: 20px;
+    padding             : 20px;
 	position			: absolute;
-	top			    	: 0;
 	right				: 0;
-	margin				: 5px;
-	background			: url('../images/cart.jpg') no-repeat;
+    top			    	: 0;
+    width				: 200px;
 }
 
+#login {
+    width               : 350px;
+    height              : 150px;
+    border				: 1px solid #eeeeee;
+    position			: absolute;
+    top			    	: 0;
+    right				: 0;
+    margin				: 20px;
+}
+
+#login table {
+    width               : 310px;
+    margin              : 0 auto;
+}
 

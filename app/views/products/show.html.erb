@@ -40,6 +40,7 @@
 
 <table class="nav_icons">
   <tr>
+    <td><%= link_to image_tag('icons/back.png', :alt => "Stock", :title => "Stock"), stock_items_path %></td>
     <td><%= link_to image_tag('icons/back.png', :alt => "Back", :title => "Back"), products_path %></td>
     <td><%= link_to image_tag('icons/edit.png', :alt => "Edit", :title => "Edit"), edit_product_path(@product) %></td>
     <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete Product'), @product, :confirm => 'Are you sure you want to delete this product?', :method => :delete %></td>

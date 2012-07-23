@@ -1,9 +1,7 @@
 class StoreController < ApplicationController
   def index
-
     # Gather all of the stock_items where the product is also active
     @products = Product.store_search(params[:search_query])
-
     #@products = Product.where("active='t' AND stock_items.quantity_in_stock>0").joins("join stock_items on products.id = stock_items.product_id").uniq
 
     # Make current cart available
@@ -20,6 +18,7 @@ class StoreController < ApplicationController
 
       # Make cart available
       @cart = current_cart
+
 
       # Put the instance variables into a hash to pass back to the show view per Rails inspector
       # @product is called at several locations throughout the show view, so it was not put in the hash
@@ -38,5 +37,12 @@ class StoreController < ApplicationController
 
   end
 
+  def thank_you
+    # Thanks customer for order
+  end
+
+  def register
+    # Customer registration
+  end
 
 end
