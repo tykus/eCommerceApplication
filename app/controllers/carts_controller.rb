@@ -1,4 +1,10 @@
 class CartsController < ApplicationController
+
+
+  # Specify that the cart show render to the 'store' layout
+  # @reference: http://jonathanhui.com/ruby-rails-3-view
+  layout "store"
+
   # GET /carts
   # GET /carts.xml
   def index
@@ -20,6 +26,11 @@ class CartsController < ApplicationController
       format.xml  { render :xml => @cart }
     end
   end
+
+  #
+  # Module: your_cart
+  # @reference: laptop_shop 2 tutorial
+  #
 
 
   def your_cart
