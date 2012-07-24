@@ -22,18 +22,23 @@ class User < ActiveRecord::Base
   end
 
   def authenticated?(password)
-    self.hashed_password == encrypt(password)
+    self.hashed_password = encrypt(password + "ruby_rocks" + self.salt)
   end
 
   protected
+
   def encrypt_password
     return if password.blank?
     salt = generate_salt
     self.hashed_password = encrypt(password + "ruby_rocks" + self.salt)
   end
+
+
   def encrypt(string)
     Digest::SHA1.hexdigest(string)
-   end
+  end
+
+
   def generate_salt
     chars = ("a".."z").to_a + ("A".."Z").to_a + ("0".."9").to_a
     salt = ""

@@ -8,58 +8,25 @@
 
 # Seed data for Genders model
 Gender.delete_all
-Gender.create(:gender => 'boy',
-              :icon_url => 'icons/m.png'
-)
-Gender.create(:gender => 'girl',
-              :icon_url => 'icons/f.png'
-)
-Gender.create(:gender => 'n/a',
-              :icon_url => 'icons/n.png'
-)
+Gender.create(:gender => 'boy', :icon_url => 'icons/m.png')
+Gender.create(:gender => 'girl', :icon_url => 'icons/f.png')
+Gender.create(:gender => 'n/a', :icon_url => 'icons/n.png')
 
 
 # Seed data for Sizes model
 Size.delete_all
-Size.create(:size_name => '0000',
-            :description => 'newborn'
-)
-Size.create(:size_name => '000',
-            :description => '0-3 months'
-)
-Size.create(:size_name => '00',
-            :description => '3-6 months'
-)
-Size.create(:size_name => '0',
-            :description => '6-12 months'
-)
-Size.create(:size_name => '1',
-            :description => '1-2 years'
-)
-Size.create(:size_name => '2',
-            :description => '2-3 years'
-)
-Size.create(:size_name => '3',
-            :description => '3-4 years'
-)
-Size.create(:size_name => '4',
-            :description => '4-5 years'
-)
-Size.create(:size_name => '5',
-            :description => '5-6 years'
-)
-Size.create(:size_name => '6',
-            :description => '6-7 years'
-)
-Size.create(:size_name => '7',
-            :description => '7-8 years'
-)
-Size.create(:size_name => '8',
-            :description => '8-9 years'
-)
-
-
-
+Size.create(:size_name => '0000', :description => 'newborn')
+Size.create(:size_name => '000', :description => '0-3 months')
+Size.create(:size_name => '00', :description => '3-6 months')
+Size.create(:size_name => '0', :description => '6-12 months')
+Size.create(:size_name => '1', :description => '1-2 years')
+Size.create(:size_name => '2', :description => '2-3 years')
+Size.create(:size_name => '3', :description => '3-4 years')
+Size.create(:size_name => '4', :description => '4-5 years')
+Size.create(:size_name => '5', :description => '5-6 years')
+Size.create(:size_name => '6', :description => '6-7 years')
+Size.create(:size_name => '7', :description => '7-8 years')
+Size.create(:size_name => '8', :description => '8-9 years')
 
 #Seed data for Categories model
 Category.delete_all
