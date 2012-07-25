@@ -28,7 +28,9 @@ class Product < ActiveRecord::Base
   validates :product_name, :presence => true
 
   # Ensure that every product has a valid price, i.e. > 0.00
-  validates_numericality_of :unit_price, :greater_than => 0.00
+  validates :unit_price,
+            :greater_than => 0.00,
+            :presence => true
 
 
 
