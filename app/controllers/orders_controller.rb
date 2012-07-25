@@ -1,8 +1,18 @@
 class OrdersController < ApplicationController
+   skip_before_filter :is_admin, :only => [:new, :create, :show, :index]
+
+
   # GET /orders
   # GET /orders.xml
   def index
-    @orders = current_user.orders.find(:all)
+    if current_user.admin
+      @orders = Order.find(:all)
+    else
+      @orders = current_user.orders.find(:all)
+    end
+
+    # Make cart available
+    @cart = current_cart
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +24,6 @@ class OrdersController < ApplicationController
   # GET /orders/1.xml
   def show
     @order = Order.find(params[:id])
-
     @line_item = LineItem.where("order_id=?", @order.id)
 
     respond_to do |format|

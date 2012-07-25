@@ -12,32 +12,29 @@
       <%= link_to image_tag('header.png'), store_index_path %>
     </div>
 
-    <!-- MENU -->
-    <div id="menu">
-        <ul>
-            <li><%= link_to "Products", products_path %></li>
-            <li><%= link_to "Categories", categories_path %></li>
-            <li><%= link_to "Stock", stock_items_path %></li>
-            <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>
-          <% if logged_in? %>
-             <li><%= link_to "Logout", logout_path %></li>
-             <li><%= link_to "Create User", new_user_path %></li>
-           </ul>
-              <%= current_user.email %>
-          <% else %>
-              <li><%= link_to "Login", login_path %></li>
-              </ul>
+  <!-- MENU -->
+  <div id="menu">
+    <ul>
+      <li><%= link_to "Home", store_index_path %></li>
+      <% if logged_in? %>
+          <% if current_user.admin %>
+              <li><%= link_to "Products", products_path %></li>
+              <li><%= link_to "Categories", categories_path %></li>
+              <li><%= link_to "Stock", stock_items_path %></li>
+              <li><%= link_to "Orders", orders_path %></li>
+              <li><%= link_to "Users", stock_items_path %></li>
+          <% elsif !current_user.admin? %>
+              <li><%= link_to "Orders", orders_path %></li>
+              <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>
+              <li><%= link_to "Profile", current_user %></li>
           <% end %>
-        <!-- SEARCH FIELD -->
-        <div id="search_form">
-        <% form_tag products_path, :method => 'get' do %>
-            <p>
-              <%=  text_field_tag :search_query, params[:search_query] %>
-              <%=  submit_tag "Search Products", :name => nil, :class => "button" %>
-            </p>
-        <% end %>
-        </div>
-    </div>
+          <li><%= link_to "Logout", logout_path %></li>
+      <% else %>
+          <li><%= link_to "Register", new_user_path %></li>
+          <li><%= link_to "Login", login_path %></li>
+      <% end %>
+    </ul>
+  </div>
 
 
 

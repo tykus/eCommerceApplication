@@ -1,7 +1,4 @@
 class StockItemsController < ApplicationController
-  # Only visible to admin users
-  before_filter :authenticate
-
   # GET /stock_items
   # GET /stock_items.xml
   def index
@@ -84,19 +81,5 @@ class StockItemsController < ApplicationController
       end
     end
   end
-
-  # DELETE /stock_items/1
-  # DELETE /stock_items/1.xml
-  def destroy
-    @stock_item = StockItem.find(params[:id])
-    @stock_item.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(stock_items_url) }
-      format.xml  { head :ok }
-    end
-  end
-
-
 
 end

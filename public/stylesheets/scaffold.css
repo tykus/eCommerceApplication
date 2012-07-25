@@ -1,13 +1,13 @@
 body {
     background: url(../images/background.jpg) repeat; /* Brian made changes - 15.07.2012 */
     color: #333;
+    height              : 100%;
 }
 
 body, p, ol, ul, td {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size:   13px;
     line-height: 18px;
-    height              : 100%;
 }
 
 pre {
@@ -36,10 +36,10 @@ div.field, div.actions {
 
 #error_explanation {
     width: 450px;
-    border: 2px solid red;
+    border: 2px solid #f60;
     padding: 7px;
     padding-bottom: 0;
-    margin-bottom: 20px;
+    margin: 20px auto;
     background-color: #f0f0f0;
 }
 
@@ -49,8 +49,8 @@ div.field, div.actions {
     padding: 5px 5px 5px 15px;
     font-size: 12px;
     margin: -7px;
-    margin-bottom: 0px;
-    background-color: #c00;
+    margin-bottom: 0;
+    background-color: #f60;
     color: #fff;
 }
 
@@ -70,13 +70,11 @@ div.field, div.actions {
     border				: 1px solid #dcdcdc;
     background-color	: #ffffff;
     display             : block;
-    height              : 100%;
     margin				: 0 auto;
     overflow			: hidden;
     padding				: 20px;
 	position			: relative;
     width				: 900px;
-
 }
 
 #header {
@@ -90,43 +88,31 @@ div.field, div.actions {
 h1,
 h2,
 h3 {
-    color				: #f60;   
+    color				: #f60;
 }
 
-p a {
-    line-height			: 32px;
-    padding-left		: 0.5em;
-    display				: block;
-    margin				: 0;
-    height				: 32px;
-}
-
-.list_line_odd {
-    background-color	: #eeeeee;
-}
-
-
-.list_line_even {
-    background-color	: #dcdcdc;
-}
-
-tr {
-	border-bottom		: 1px dotted #333;
-}
-
-th {
-	border-bottom		: 1px solid #333;
+h4 {
+    margin              : 0;
 }
 
 .inactive {
 	background-color	: #f9bebe;
 }
 
+
+/* FORM STYLES */
+
 .label {
 	font-weight			: 600;
 	vertical-align		: top;
 	padding				: 0.5em;
 }
+
+
+input {
+    border              : 1px solid #e2e2e2;
+}
+
 
 
 /* MENU STYLES */
@@ -156,7 +142,7 @@ th {
     margin-right		: 0.1em;
     text-align			: center;
     text-decoration		: none;
-    width				: 9em;
+    width				: 10%;
 }
 
 #menu li a:link,
@@ -178,19 +164,6 @@ th {
     overflow            : auto;
 }
 
-#search_form input {
-    border				: 1px solid #dcdcdc;
-}
-
-#search_form .button {
-    background      	: url('../images/button_bg.jpg') repeat-x;
-    border				: 1px solid #dcdcdc;
-    color				: #333333;
-}
-
-#search_form .button:hover {
-    background      	: url('../images/button_hover.jpg') repeat-x;
-}
 
 /* IMAGE STYLES */
 
@@ -198,13 +171,14 @@ img {
 	background-color	: #fff;
 	border				: 1px solid #dcdcdc;
 	padding				: 5px;
+	margin				: 5px;
 }
-
 a img,
 img .icon {
 	background			: transparent;
 	border				: 0;
-	padding				: 0;	
+	padding				: 0;
+    margin              : 0;
 }
 .showProduct {
     float				: right;
@@ -245,6 +219,7 @@ img .icon {
     text-align 			: left;
 }
 .right {
+    margin-right        : 15px;
 	text-align			: right;
 }
 .center {
@@ -255,30 +230,44 @@ table {
     clear               : both;
     width               : 90%;
     margin              : 0 auto;
-
+    border-collapse     : collapse;
+    border-spacing      : 0;
 }
 
-table .products {
-    width               : 50%;
-    float               : left;
+.list_line_odd {
+    background-color	: #eeeeee;
 }
 
 
+.list_line_even {
+    background-color	: #dcdcdc;
+}
+
+tr {
+    /*border-bottom		: 1px dotted #333;     */
+}
+
+th {
+    border-bottom		: 3px solid #333;
+}
+
+
+/* TOTAL ROW ON CART/ORDERS TABLES */
 .total {
     text-align			: right;
     font-weight         : 700;
-    border-top          : 1px solid #333;
+    border-top          : 3px solid #333;
 }
 
 
 /* CART/LOGIN PANEL */
 
 #cart {
-    background			: url('../images/cart.jpg') no-repeat;
+    background			: url('../images/icons/cart.png') no-repeat;
     border				: 1px solid #eeeeee;
-	height				: 100px;
     margin				: 20px;
-    padding             : 20px;
+    height              : 140px;
+    padding             : 5px;
 	position			: absolute;
 	right				: 0;
     top			    	: 0;
@@ -301,4 +290,39 @@ table .products {
 }
 
 
+/* CALL TO ACTION BUTTONS */
+.c2a_btn {
+    background          : url('../images/button_bg.jpg') repeat-x;
+    border              : 1px solid #dcdcdc;
+    display             : block;
+    float               : right;
+    height              : 15px;
+    line-height         : 15px;
+    margin              : 5px;
+    padding             : 5px;
+    text-align          : center;
+    text-decoration     : none;
+}
 
+.c2a_btn:hover {
+    background          : url('../images/button_hover.jpg') repeat-x;
+    color               : #333;
+}
+
+
+/* FORM STYLES */
+
+.button {
+    background      	: url('../images/button_bg.jpg') repeat-x;
+    border				: 1px solid #dcdcdc;
+    color				: #333333;
+}
+
+.button:hover {
+    background      	: url('../images/button_hover.jpg') repeat-x;
+}
+
+.small_field {
+    width               : 25px;
+    text-align          : center;
+}

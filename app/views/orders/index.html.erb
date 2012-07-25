@@ -1,3 +1,8 @@
+<div id="cart">
+    <%= render '/store/cart' %>
+</div>
+
+
 <h1>Listing orders</h1>
 
 <table>
@@ -9,19 +14,22 @@
     <th></th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @orders.each do |order| %>
-  <tr>
-    <td><%= order.id %></td>
-    <td><%= current_user.email%></td>
-    <td><%= order.created_at %></td>
-    <td></td>
-    <td></td>
-    <td><%= link_to 'Show', order %></td>
-    <td><%= link_to 'Edit', edit_order_path(order) %></td>
-    <td><%= link_to 'Destroy', order, :confirm => 'Are you sure?', :method => :delete %></td>
+  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    <td class="center"><%= order.id %></td>
+    <td><%= order.user.email%></td>
+    <td class="center"><%= order.created_at %></td>
+    <td class="right"><%= number_to_currency(order.total_price, :unit => '&euro;') %></td>
+    <td><%= link_to image_tag('icons/show.png', :alt => 'Show', :title => 'Show'), order %></td>
+    <% if current_user.admin %>
+        <td><%= link_to image_tag('icons/edit.png', :alt => 'Edit', :title => 'Edit'), edit_order_path(order) %></td>
+        <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete'), order, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% else %>
+        <td></td>
+        <td></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

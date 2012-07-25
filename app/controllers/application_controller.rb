@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-
+  before_filter :is_admin
 
   private
   def current_cart
@@ -48,6 +48,19 @@ class ApplicationController < ActionController::Base
   def access_denied
     redirect_to login_path, :notice => "Please log in to continue"
     false
+  end
+
+
+  #
+  # is_admin
+  # @author: Brian O'Sullivan
+  #
+
+
+  def is_admin
+    unless current_user.admin
+      redirect_to store_index_path
+    end
   end
 
 end

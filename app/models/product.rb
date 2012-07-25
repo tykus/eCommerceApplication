@@ -53,9 +53,9 @@ class Product < ActiveRecord::Base
   def self.store_search(search_query)
     if search_query
       find(:all, :conditions => ["active='t' AND product_name LIKE ?", "%#{search_query}%"])
-      #find(:all, :conditions => ["active='t' AND product_name LIKE ? AND category_id=?", "%#{search_query}%", :category])
     else
-      find(:all)
+      # The store index should only provide products which are 'active'
+      find(:all, :conditions => "active='t'")
     end
   end
 end

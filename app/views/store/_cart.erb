@@ -1,5 +1,9 @@
-<h3><%= link_to'View cart', cart_url(@cart) %></h3>
-<p><%= pluralize(@cart.count, 'item')   %>
-<br />
-Total : <%=  number_to_currency(@cart.total_price, :unit => '&euro;') %></p>
+<p><%= link_to'View cart', :controller => "carts", :action => "your_cart" %>
+  <br />
+  <%= pluralize(@cart.count, 'item')   %>
+  <br />
+  Total : <%=  number_to_currency(@cart.total_price, :unit => '&euro;') %>
+  <br />
+  <b><%=  current_user.email %></b>
 </p>
+<%=  link_to 'Checkout', new_order_path, :method => :get, :class => 'c2a_btn' %>

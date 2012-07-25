@@ -20,7 +20,6 @@ ECommerceApplication::Application.routes.draw do
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
 
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

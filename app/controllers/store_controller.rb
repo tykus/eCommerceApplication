@@ -1,4 +1,7 @@
 class StoreController < ApplicationController
+  # Whitelist Store for public access
+  skip_before_filter :is_admin
+
   def index
     # Gather all of the stock_items where the product is also active
     @products = Product.store_search(params[:search_query])

@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-
+  skip_before_filter :is_admin, :except => 'index'
 
   # Specify that the cart show render to the 'store' layout
   # @reference: http://jonathanhui.com/ruby-rails-3-view
@@ -8,8 +8,8 @@ class CartsController < ApplicationController
   # GET /carts
   # GET /carts.xml
   def index
-    @carts = Cart.all
-
+    # return the number of carts that are pending
+    @carts = Cart.where("cart.count > 0")
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @carts }

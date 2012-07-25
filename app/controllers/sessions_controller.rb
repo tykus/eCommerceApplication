@@ -1,9 +1,15 @@
 class SessionsController < ApplicationController
+  # Whitelist Sessions for public access
+  skip_before_filter :is_admin
 
   def create
     if user = User.authenticate(params[:email], params[:password])
       session[:user_id] = user.id
-      redirect_to store_index_path, :notice => "Logged in successfully"
+      if user.admin
+        redirect_to products_path
+      else
+        redirect_to store_index_path, :notice => "Logged in successfully"
+      end
     else
       flash.now[:alert] = "Invalid login/password combination"
       render :controller => 'session', :action => 'new'

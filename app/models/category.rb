@@ -6,6 +6,6 @@ class Category < ActiveRecord::Base
   has_attached_file :photo
 
   # Each category must have a category name
-  validates :category_name, presence: true
-
+  validates :category_name,
+            :presence => true
 end

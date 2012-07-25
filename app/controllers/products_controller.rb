@@ -1,12 +1,9 @@
 class ProductsController < ApplicationController
-  # Only visible to admin users
-  before_filter :authenticate
 
   # GET /products
   # GET /products.xml
 
   def index
-    # Change the default
     @products = Product.search(params[:search_query])
 
     respond_to do |format|
@@ -83,15 +80,4 @@ class ProductsController < ApplicationController
     end
   end
 
-  # DELETE /products/1
-  # DELETE /products/1.xml
-  def destroy
-    @product = Product.find(params[:id])
-    @product.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(products_url) }
-      format.xml  { head :ok }
-    end
-  end
 end

@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
   end
 
   def authenticated?(password)
-    self.hashed_password = encrypt(password + "ruby_rocks" + self.salt)
+    self.hashed_password == encrypt(password + "ruby_rocks" + self.salt)
   end
 
   protected
@@ -45,4 +45,5 @@ class User < ActiveRecord::Base
     1.upto(10) { |i| salt << chars[rand(chars.size-1)] }
     self.salt = salt
   end
+
 end

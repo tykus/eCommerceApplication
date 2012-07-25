@@ -13,6 +13,16 @@ class StockItem < ActiveRecord::Base
 
   validates_uniqueness_of :product_id, :scope=>:size_id
 
+  # Validate quantity in stock is a positive integer only
+  validates :quantity_in_stock,
+            :presence => true,
+            :numericality => {
+                :only_integer => true,
+                :greater_than_or_equal_to => 0
+            }
+
+
+
 
   # Ensure the amount of stock is greater than 0
   # validates_numericality_of :quantity_in_stock, :greater_than_or_equal_to => 0

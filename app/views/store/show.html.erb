@@ -1,5 +1,5 @@
 <% if logged_in? %>
-    <div id="cart">
+    <div id="cart" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
       <%= render 'cart' %>
     </div>
 <% else %>
@@ -17,42 +17,31 @@
 
 <h3><%= @product.product_name %></h3>
 
-<table class='products'>
-  <tr>
-    <td class='label'>Description</td>
-    <td><%= @product.description %></td>
-  </tr>
-  <tr>
-    <td class='label'>Category</td>
-    <td><%= @product.category.try(:category_name) %> Range</td>
-  </tr>
-  <tr>
-    <td class='label'>Unit Price</td>
-    <td><%= number_to_currency(@product.unit_price, :unit=>'€') %></td>
-  </tr>
-  <tr>
-    <td class='label'>Colour</td>
-    <td> <%= @product.colour %></td>
-  </tr>
-  <tr>
-    <td class='label'>Gender</td>
-    <td><%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %></td>
-  </tr>
-  <tr>
-    <td class='label'>Sizes Available</td>
-    <td>
-      <% if logged_in? %>
-          <% form_for LineItem.new do |f| %>
-              <%= select(:stock_item, :id, @data["stocks"].map{|s| [s.size.description, s.id]}) %>
-              <%= f.submit "Add to Cart" %>
-          <% end %>
-      <% else %>
-          <% @data["stocks"].each do |s| %>
-              <%= s.size.description %>
-              <br />
-          <% end %>
-          <p class="notice">You must be logged in to add items to cart.</p>
-      <% end %>
-    </td>
-  </tr>
-</table>
+<h4>Description</h4>
+<p><%= h(@product.description) %></p>
+
+<h4>Category</h4>
+<p><%= @product.category.try(:category_name) %> Range</p>
+
+<h4>Unit Price</h4>
+<p><%= number_to_currency(@product.unit_price, :unit=>'€') %></p>
+
+<h4>Colour</h4>
+<p> <%= @product.colour %></p>
+
+<h4>Gender</h4>
+<p><%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %></p>
+
+<h4>Sizes Available</h4>
+<% if logged_in? %>
+  <% form_for LineItem.new do |f| %>
+      <%= select(:stock_item, :id, @data["stocks"].map{|s| [s.size.description, s.id]}) %>
+      <%= f.submit "Add to Cart", :class => 'button' %>
+  <% end %>
+<% else %>
+  <% @data["stocks"].each do |s| %>
+      <%= s.size.description %>
+      <br />
+  <% end %>
+  <p class="notice">You must be logged in to add items to cart.</p>
+<% end %>

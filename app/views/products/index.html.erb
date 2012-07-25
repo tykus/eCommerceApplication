@@ -4,7 +4,6 @@
   <tr>
     <th>Picture</th>
     <th>Product name</th>
-    <th>Description</th>
     <th>Unit price</th>
     <th>Colour</th>
     <th>Gender</th>
@@ -12,34 +11,24 @@
     <th>User</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
   <% @products.each do |product| %>
     <% if product.active %>
-        <tr>
+        <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
     <% else %>
         <tr class="inactive">
     <% end %>
-
-    <%  if product.photo.exists? then %>
-      <td><%= image_tag(product.photo.url(:small)) %></td>
-    <% else %>
-       <td class="thumb"><%= image_tag(product.picture) %></td>
-    <% end %>
-    <td><%= product.product_name %></td>
-    <td><%= product.description %></td>
-    <td><%= number_to_currency(product.unit_price,:unit=>'€') %></td>
-    <td><%= product.colour %></td>
-    <td><%= image_tag(product.gender.icon_url, :alt => product.gender.gender, :title => product.gender.gender, :class => 'icon') %></td>
-    <td><%= product.category.try(:category_name) %></td>
-    <td><%= product.user_id %></td>
-    <td><%= link_to image_tag('icons/show.png', :alt => 'Show', :title => 'Show Product Information'), product %></td>
-    <% unless current_user.admin %>
+        <td><%= image_tag(product.photo.url(:small)) %></td>
+        <td><%= product.product_name %></td>
+        <td class="right"><%= number_to_currency(product.unit_price,:unit=>'€') %></td>
+        <td class="center"><%= product.colour %></td>
+        <td class="center"><%= image_tag(product.gender.icon_url, :alt => product.gender.gender, :title => product.gender.gender, :class => 'icon') %></td>
+        <td class="center"><%= product.category.try(:category_name) %></td>
+        <td class="center"><%= product.user_id %></td>
+        <td><%= link_to image_tag('icons/show.png', :alt => 'Show', :title => 'Show Product Information'), product %></td>
         <td><%= link_to image_tag('icons/edit.png', :alt => 'Edit', :title => 'Edit Product'), edit_product_path(product) %></td>
-        <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete Product'), product, :confirm => 'Are you sure you want to delete this product?', :method => :delete %></td>
-    <% end %>
-     </tr>
+    </tr>
   <% end %>
 </table>
 

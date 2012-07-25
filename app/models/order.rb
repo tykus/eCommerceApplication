@@ -16,11 +16,11 @@ class Order < ActiveRecord::Base
   # @reference: laptop_shop tutorial 4
 
   def total_price
-
     total=0
     line_items.each do |line_item|
       total += line_item.stock_item.product.unit_price * line_item.quantity
     end
     total
   end
+
 end
