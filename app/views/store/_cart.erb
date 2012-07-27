@@ -1,8 +1,8 @@
 <p><%= link_to'View cart', :controller => "carts", :action => "your_cart" %>
   <br />
-  <%= pluralize(@cart.count, 'item')   %>
+  <%= pluralize(current_cart.count, 'item')   %>
   <br />
-  Total : <%=  number_to_currency(@cart.total_price, :unit => '&euro;') %>
+  Total : <%=  number_to_currency(current_cart.total_price, :unit => '&euro;') %>
   <br />
   <b><%=  current_user.email %></b>
 </p>

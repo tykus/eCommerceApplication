@@ -22,7 +22,7 @@
               <li><%= link_to "Categories", categories_path %></li>
               <li><%= link_to "Stock", stock_items_path %></li>
               <li><%= link_to "Orders", orders_path %></li>
-              <li><%= link_to "Users", stock_items_path %></li>
+              <li><%= link_to "Users", users_path %></li>
           <% elsif !current_user.admin? %>
               <li><%= link_to "Orders", orders_path %></li>
               <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>

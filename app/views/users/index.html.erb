@@ -5,17 +5,13 @@
         <th>Email</th>
         <th>Admin</th>
         <th></th>
-        <th></th>
-        <th></th>
       </tr>
 
       <% @users.each do |user| %>
-          <tr>
-            <td><%= user.email %></td>
-            <td><%= user.admin %></td>
-            <td><%= link_to 'Show', user %></td>
-            <td><%= link_to 'Edit', edit_user_path(user) %></td>
-            <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+          <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
+            <td class='center'><%= user.email %></td>
+            <td class='center'><%= user.admin %></td>
+            <td><%= link_to image_tag('icons/show.png', :alt => 'Show Profile', :title => 'Show Profile'), user %></td>
           </tr>
       <% end %>
     </table>

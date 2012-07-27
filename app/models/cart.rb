@@ -1,8 +1,9 @@
 class Cart < ActiveRecord::Base
-
   belongs_to :user
   has_many :line_items, :dependent => :destroy
 
+  # calculate total price for products in cart
+  # @reference: laptop_shop tutorial 3
 
   def add_product(stock_item)
     current_item = line_items.where(:stock_item_id => stock_item.id).first
@@ -29,7 +30,7 @@ class Cart < ActiveRecord::Base
 
   #
   # count of products in cart
-  # @author Brian
+  # @author Brian O'Sullivan
   #
   def count
     count = 0
@@ -38,8 +39,6 @@ class Cart < ActiveRecord::Base
     end
     count
   end
-
-
 
 end
 

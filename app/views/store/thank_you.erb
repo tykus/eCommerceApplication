@@ -1,2 +1,31 @@
 <h1>Thank You</h1>
 <p>Thank you for your order <%= current_user.email %></p>
+
+<h2>Order #<%= @order.id %></h2>
+<p>The following order has been placed for you.</p>
+<table>
+  <tr>
+    <th class='left'>Product Name</th>
+    <th>Quantity Ordered</th>
+    <th class='right'>Unit Price</th>
+    <th class='right'>Total Price</th>
+  </tr>
+<% @line_items.each do |line_item| %>
+    <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
+      <td><%= line_item.stock_item.product.product_name %></td>
+      <td class='center'><%= line_item.quantity %></td>
+      <td class='right'><%= number_to_currency(line_item.stock_item.product.unit_price, :unit => '&euro;') %></td>
+      <td class='right'><%= number_to_currency(line_item.subtotal, :unit => '&euro;') %></td>
+    </tr>
+<% end %>
+  <tr class='total'>
+    <td></td>
+    <td></td>
+    <td>Order Total:</td>
+    <td><%= number_to_currency(@order.total_price, :unit => '&euro;') %></td>
+  </tr>
+</table>
+
+
+<p>Thank you, an email has been sent to you confirming your order.</p>
+<p>We recommend you keep a copy of each order confirmation</p>

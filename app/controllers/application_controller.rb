@@ -11,6 +11,8 @@ class ApplicationController < ActionController::Base
     cart
   end
 
+  helper_method :current_cart
+
   protected
 # Returns the currently logged in user or nil if there isn't one
   def current_user
@@ -55,8 +57,6 @@ class ApplicationController < ActionController::Base
   # is_admin
   # @author: Brian O'Sullivan
   #
-
-
   def is_admin
     unless current_user.admin
       redirect_to store_index_path

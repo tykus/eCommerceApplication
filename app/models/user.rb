@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :products
   has_many :orders
+  has_many :carts
   attr_accessor :password
   before_save :encrypt_password
 
@@ -24,6 +25,8 @@ class User < ActiveRecord::Base
   def authenticated?(password)
     self.hashed_password == encrypt(password + "ruby_rocks" + self.salt)
   end
+
+  #  PROTECTED METHODS
 
   protected
 

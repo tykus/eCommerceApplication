@@ -45,7 +45,7 @@ class StockItemsController < ApplicationController
     # Make available size data to associate with stock_item via dropdown menu in form
     @sizes = Size.all
     # Make available product data to associate with stock_item via dropdown menu in form
-    @products = Product.all
+    @products = Product.where("active='t'")
 
 
   end

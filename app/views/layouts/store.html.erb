@@ -11,18 +11,28 @@
   <div id="header">
     <%= link_to image_tag('header.png'), store_index_path %>
   </div>
+  <% if logged_in? %>
+      <div id="cart">
+        <%= render '/store/cart' %>
+      </div>
+  <% else %>
+      <div id="login">
+        <%= render '/sessions/login' %>
+      </div>
+  <% end %>
 
   <!-- MENU -->
   <div id="menu">
     <ul>
         <li><%= link_to "Home", store_index_path %></li>
+        <li><%= link_to "Boys", store_index_path(:gender_id => 1) %></li>
         <% if logged_in? %>
           <% if current_user.admin %>
               <li><%= link_to "Products", products_path %></li>
               <li><%= link_to "Categories", categories_path %></li>
               <li><%= link_to "Stock", stock_items_path %></li>
               <li><%= link_to "Orders", orders_path %></li>
-              <li><%= link_to "Users", stock_items_path %></li>
+              <li><%= link_to "Users", users_path %></li>
           <% elsif !current_user.admin? %>
               <li><%= link_to "Orders", orders_path %></li>
               <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>

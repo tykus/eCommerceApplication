@@ -11,6 +11,7 @@ class StockItem < ActiveRecord::Base
             :size_id,
             :presence => true
 
+  # Ensure that there is one entry for any size of a particular product
   validates_uniqueness_of :product_id, :scope=>:size_id
 
   # Validate quantity in stock is a positive integer only
@@ -22,9 +23,29 @@ class StockItem < ActiveRecord::Base
             }
 
 
+  # Returns all StockItem objects which have quantity in_stock > 0
+  # @author Brian O'Sullivan 11114835
+  def self.stock_available
+    find(:all, :conditions => 'quantity_in_stock > 0')
+  end
 
+  # Checks if there is enough of a stock_item
+  # @author Brian O'Sullivan 11114835
+  def self.have_stock?(line_item)
+    return false unless line_item.quantity <= line_item.stock_item.quantity_in_stock
+  end
 
-  # Ensure the amount of stock is greater than 0
-  # validates_numericality_of :quantity_in_stock, :greater_than_or_equal_to => 0
-
+  # Reduce the quantity_in_stock resulting from the given order
+  # @author Brian O'Sullivan 11114835
+  def self.picker!(order)
+    order.line_items.each do |line_item|
+      @stock_item = line_item.stock_item
+      if have_stock?(line_item)
+        @stock_item.quantity_in_stock -= line_item.quantity
+        @stock_item.save
+      else
+        line_item.destroy
+      end
+    end
+  end
 end

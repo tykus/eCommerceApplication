@@ -64,12 +64,18 @@ class LineItemsController < ApplicationController
   def update
     @line_item = LineItem.find(params[:id])
     respond_to do |format|
-      if @line_item.update_attributes(params[:line_item])
+      if @line_item.update_attributes!(params[:line_item])
 
-        # <<<<< if params(quantity) == 0, I want to destroy the line_item>>>>>
+        # Destroy line_item if the quantity in the cart is 0
+        if params[:line_item][:quantity] == "0"
+          @line_item.destroy
+          redirect_to(your_cart_url)
+        else
 
-        format.html { redirect_to(@line_item.cart, :notice => 'Line item was successfully updated.') }
-        format.xml  { head :ok }
+
+          format.html { redirect_to(current_cart, :notice => 'Line item was successfully updated.') }
+          format.xml  { head :ok }
+        end
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @line_item.errors, :status => :unprocessable_entity }

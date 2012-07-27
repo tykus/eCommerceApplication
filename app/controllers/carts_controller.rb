@@ -5,25 +5,15 @@ class CartsController < ApplicationController
   # @reference: http://jonathanhui.com/ruby-rails-3-view
   layout "store"
 
-  # GET /carts
-  # GET /carts.xml
-  def index
-    # return the number of carts that are pending
-    @carts = Cart.where("cart.count > 0")
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @carts }
-    end
-  end
-
   # GET /carts/1
   # GET /carts/1.xml
   def show
     @cart = Cart.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @cart }
+    unless @cart.line_items.empty?
+      respond_to do |format|
+        format.html # show.html.erb
+        format.xml  { render :xml => @cart }
+      end
     end
   end
 
@@ -57,7 +47,7 @@ class CartsController < ApplicationController
   # POST /carts
   # POST /carts.xml
   def create
-    @cart = Cart.new(params[:cart])
+    @cart = current_user.carts.new(params[:cart])
 
     respond_to do |format|
       if @cart.save

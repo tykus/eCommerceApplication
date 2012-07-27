@@ -1,13 +1,3 @@
-  <% if logged_in? %>
-    <div id="cart">
-      <%= render 'cart' %>
-    </div>
-  <% else %>
-      <div id="login">
-      <%= render '/sessions/login' %>
-      </div>
-  <% end %>
-
 <h1>Welcome to our Store</h1>
 <p id='notice'><%= notice %></p>
 <p>Here are our products!</p>

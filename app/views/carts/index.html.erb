@@ -1,23 +1,21 @@
-<h1>Listing carts</h1>
+<h1>Pending carts</h1>
 
 <table>
   <tr>
+    <th>Cart Owner</th>
     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th># of Items</th>
+    <th>Cart Value</th>
   </tr>
 
 <% @carts.each do |cart| %>
-  <tr>
-    <td><%= cart.user %></td>
-    <td><%= link_to 'Show', cart %></td>
-    <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
-    <td><%= link_to 'Destroy', cart, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+   <% unless cart.line_items.empty? %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+        <td><%=  %></td>
+        <td></td>
+        <td class='center'><%= cart.count %></td>
+        <td class='right'><%= number_to_currency(cart.total_price, :unit => '&euro;') %></td>
+      </tr>
+   <% end %>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Cart', new_cart_path %>

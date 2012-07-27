@@ -19,7 +19,7 @@
 <% @orders.each do |order| %>
   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
     <td class="center"><%= order.id %></td>
-    <td><%= order.user.email%></td>
+    <td><%= order.user.email %></td>
     <td class="center"><%= order.created_at %></td>
     <td class="right"><%= number_to_currency(order.total_price, :unit => '&euro;') %></td>
     <td><%= link_to image_tag('icons/show.png', :alt => 'Show', :title => 'Show'), order %></td>

@@ -9,8 +9,8 @@
   </tr>
 
 
-    <% @line_item.each do |line_item| %>
-        <tr>
+    <% @line_items.each do |line_item| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
           <td><%= image_tag(line_item.stock_item.product.photo.url(:small)) %></td>
           <td><%= line_item.stock_item.product.product_name %></td>
           <td class='center'><%= line_item.quantity %></td>
@@ -20,13 +20,13 @@
     <% end %>
 
 
-  <tr>
+  <tr class='total'>
     <td></td>
     <td></td>
     <td></td>
-    <td class='total'>Order Total:</td>
-    <td class='total'><%= number_to_currency(@order.total_price, :unit=>'&euro;') %></td>
+    <td>Order Total:</td>
+    <td><%= number_to_currency(@order.total_price, :unit=>'&euro;') %></td>
   </tr>
 </table>
 
-<%= link_to 'Back', orders_path %>
+<%= link_to image_tag('icons/back.png', :alt => 'Back', :title => 'Back'), orders_path %>

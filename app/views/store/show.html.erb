@@ -18,7 +18,7 @@
 <h3><%= @product.product_name %></h3>
 
 <h4>Description</h4>
-<p><%= h(@product.description) %></p>
+<p><%= @product.description %></p>
 
 <h4>Category</h4>
 <p><%= @product.category.try(:category_name) %> Range</p>
@@ -35,7 +35,7 @@
 <h4>Sizes Available</h4>
 <% if logged_in? %>
   <% form_for LineItem.new do |f| %>
-      <%= select(:stock_item, :id, @data["stocks"].map{|s| [s.size.description, s.id]}) %>
+      <%= select(:stock_item, :id, @stocks.map{|s| [s.size.description, s.id]}) %>
       <%= f.submit "Add to Cart", :class => 'button' %>
   <% end %>
 <% else %>

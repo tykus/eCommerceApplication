@@ -1,5 +1,22 @@
+#
+# orders_controller.rb
+#
+# Version 1
+#
+# 26/07/2012
+#
+# @author Brian O'Sullivan 11114835
+#
+# @reference Agile Web Development with Rails 4th ed. pp153-165
+# @reference http://railscasts.com/episodes/206-action-mailer-in-rails-3
+#
+
+
+
+
+
 class OrdersController < ApplicationController
-   skip_before_filter :is_admin, :only => [:new, :create, :show, :index]
+   skip_before_filter :is_admin, :except => [:update, :destroy]
 
 
   # GET /orders
@@ -11,20 +28,24 @@ class OrdersController < ApplicationController
       @orders = current_user.orders.find(:all)
     end
 
-    # Make cart available
-    @cart = current_cart
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @orders }
     end
   end
 
-  # GET /orders/1
-  # GET /orders/1.xml
+  # @author Brian O'Sullivan 11114835
   def show
-    @order = Order.find(params[:id])
-    @line_item = LineItem.where("order_id=?", @order.id)
+    if current_user.admin?
+      # Admin user can see any order
+      @order = Order.find(params[:id])
+    else
+      # Only return order if associated with the current user
+      @order = current_user.orders.find(params[:id])
+    end
+
+    # Fetch the line_items associated with the order returned
+    @line_items = @order.line_items
 
     respond_to do |format|
       format.html # show.html.erb
@@ -32,15 +53,12 @@ class OrdersController < ApplicationController
     end
   end
 
-  # GET /orders/new
-  # GET /orders/new.xml
+  # @reference Agile Web Development with Rails 4th ed. pp154-5
   def new
-    @cart = current_cart
-    if @cart.line_items.empty?
+    if current_cart.line_items.empty?
       redirect_to store_url, :notice => "Your cart is empty"
       return
     end
-
 
     @order = Order.new
 
@@ -55,20 +73,26 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
   end
 
-  # POST /orders
-  # POST /orders.xml
+  # @author Brian O'Sullivan 11114835
+  # @reference http://railscasts.com/episodes/206-action-mailer-in-rails-3
   def create
     @order = current_user.orders.new(params[:order])
     @order.add_line_items_from_cart(current_cart)
 
     respond_to do |format|
       if @order.save
+
+        # Send an email to the user to confirm the order
+        UserMailer.order_confirmation(current_user, @order).deliver
+
+        # Remove the items purchased from the stock_items
+        StockItem.picker!(@order)
+
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         format.html { redirect_to(:controller => 'store', :action => 'thank_you') }
         format.xml  { render :xml => @order, :status => :created, :location => @order }
       else
-        @cart = current_cart
         format.html { render :action => "new" }
         format.xml  { render :xml => @order.errors, :status => :unprocessable_entity }
       end
