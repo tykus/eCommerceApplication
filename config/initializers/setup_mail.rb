@@ -3,7 +3,7 @@ ActionMailer::Base.smtp_settings = {
     :port                 => 587,
     :domain               => "kidzboutique.ie",
     :user_name            => "bosullivan.meath@gmail.com",
-    :password             => "p34rlj4m",
+    :password             => "",
     :authentication       => "plain",
     :enable_starttls_auto => true
 }

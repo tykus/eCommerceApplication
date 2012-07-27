@@ -39,7 +39,7 @@
       <%= f.submit "Add to Cart", :class => 'button' %>
   <% end %>
 <% else %>
-  <% @data["stocks"].each do |s| %>
+  <% @stocks.each do |s| %>
       <%= s.size.description %>
       <br />
   <% end %>
