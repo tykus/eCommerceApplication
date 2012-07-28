@@ -1,1 +1,14 @@
-<h1>Showing User</h1>
+<h1>User Profile</h1>
+
+<p>
+  <b>Name:</b>
+  <%= @user.first_name + " " + @user.last_name %>
+</p>
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>

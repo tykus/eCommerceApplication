@@ -43,8 +43,6 @@ class StockItem < ActiveRecord::Base
       if have_stock?(line_item)
         @stock_item.quantity_in_stock -= line_item.quantity
         @stock_item.save
-      else
-        line_item.destroy
       end
     end
   end

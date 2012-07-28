@@ -1,24 +1,39 @@
+#
+# product.rb
+#
+# Version 1
+#
+# 27/07/2012
+#
+# @author Brian O'Sullivan 11114835
+#
+# @reference LaptopShop Tutorial - Part 1
+#
+
+
 class Product < ActiveRecord::Base
-  # Every product belongs to exactly one category
   belongs_to :category
-
-  # Every product is for exactly one gender
   belongs_to :gender
-
-  # Need to be able to record the user who creates the product
   belongs_to :user
 
-  # Associative Relationship with size model through stock_items
   has_many :stock_items, :dependent => :destroy
   has_many :sizes, :through => :stock_items, :foreign_key => :size_id
-
-  # Associative relationship with orders model through line items
-  has_many  :line_items
-  has_many  :orders, :through => :line_items
+  has_many :line_items
+  has_many :orders, :through => :line_items
 
 
+  # @reference   http://zachholman.com/2010/01/simplifying-rails-controllers-with-named_scopes/
+  # Note: products which are gender neutral will be returned in both cases
+  scope :with_gender, lambda {|gender| gender.present? ? {:conditions => [ "gender_id IN (?,3)", gender ] }:{} }
+  scope :with_category, lambda {|category| category.present? ? {:conditions => { :category_id => category } }:{} }
+  scope :with_query, lambda {|query| query.present? ? {:conditions => ['product_name LIKE ?', "%#{query}%"] }:{} }
+ # scope :with_size, lambda {|size| size.present}
 
-  # Paperclip:
+  scope :is_active, :conditions => { :active => true }
+
+
+
+  # Paperclip photo attributes
   has_attached_file :photo,
                     :styles => { :small => "100x100#",
                                  :store => "180x180#",
@@ -34,34 +49,5 @@ class Product < ActiveRecord::Base
                 :greater_than_or_equal_to => 0.01
             }
 
-
-
-
-  # Search Products Functionality
-  #
-  # @reference Laptop Shop Tutorial 2
-  #
-  belongs_to :user
-  has_many :line_items
-
-  def self.search(search_query)
-    if search_query
-      find(:all, :conditions => ['product_name LIKE ?', "%#{search_query}%"])
-    else
-      find(:all)
-    end
-  end
-
-
-  # Store search
-  # @author: Brian
-  def self.store_search(search_query)
-    if search_query
-      find(:all, :conditions => ["active='t' AND product_name LIKE ?", "%#{search_query}%"])
-    else
-      # The store index should only provide products which are 'active'
-      find(:all, :conditions => "active='t'")
-    end
-  end
 end
 

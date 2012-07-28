@@ -33,3 +33,6 @@ gem 'sqlite3'
 
 # Paperclip
 gem "paperclip", "~> 3.0"
+
+# Has_Scope filtering
+gem "has_scope", "~> 0.5.1"

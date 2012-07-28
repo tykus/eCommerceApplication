@@ -1,11 +1,11 @@
 ECommerceApplication::Application.routes.draw do
 
-
   get "users/new"
   get "store/index"
   get "store/show"
   get "store/thank_you"
   get "store/register"
+  get "store/category_view"
 
   resources :line_items
   resources :orders
