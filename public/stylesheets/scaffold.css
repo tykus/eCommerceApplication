@@ -326,3 +326,31 @@ th {
     width               : 25px;
     text-align          : center;
 }
+
+
+/* CATEGORY VIEW STYLES */
+.category_link {
+    clear               : both;
+    margin              : 30px auto;
+    width               : 90%;
+    display             : block;
+    height              : 112px;
+    line-height         : 112px;
+    color               : #f60;
+    font-size           : 1.5em;
+    font-weight         : 700;
+    text-decoration     : none;
+}
+
+.category_link:hover {
+    background-color    : #eeeeee;
+
+}
+
+.category_link img {
+    float               : left;
+    padding             : 5px;
+    background-color    : #fff;
+    border              : 1px solid #e2e2e2;
+    margin-right        : 30px;
+}

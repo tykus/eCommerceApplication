@@ -35,7 +35,11 @@ class UsersController < ApplicationController
 
 
   def show
-    @user = current_user
+    @user = User.find(current_user.id)
+  end
+
+  def edit
+    @user = User.find(current_user.id)
   end
 
 

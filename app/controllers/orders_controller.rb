@@ -11,13 +11,10 @@
 # @reference http://railscasts.com/episodes/206-action-mailer-in-rails-3
 #
 
-
-
-
-
 class OrdersController < ApplicationController
    skip_before_filter :is_admin, :except => [:update, :destroy]
 
+   layout "store"
 
   # GET /orders
   # GET /orders.xml
@@ -60,7 +57,11 @@ class OrdersController < ApplicationController
       return
     end
 
+    @line_items = current_cart.line_items
+
     @order = Order.new
+
+
 
     respond_to do |format|
       format.html # new.html.erb

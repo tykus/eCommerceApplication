@@ -1,6 +1,22 @@
+#
+# sessions_controller.rb
+#
+# Version 1
+#
+# 25/07/2012
+#
+# @author Ayotunde Odusanya
+#
+# @reference LaptopShop Tutorial
+#
+
 class SessionsController < ApplicationController
   # Whitelist Sessions for public access
   skip_before_filter :is_admin
+
+  # Specify that the cart show render to the 'store' layout
+  # @reference: http://jonathanhui.com/ruby-rails-3-view
+  layout "store"
 
   def create
     if user = User.authenticate(params[:email], params[:password])

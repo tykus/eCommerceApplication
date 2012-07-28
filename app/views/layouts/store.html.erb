@@ -25,7 +25,9 @@
   <div id="menu">
     <ul>
         <li><%= link_to "Home", store_index_path %></li>
-        <li><%= link_to "Boys", store_index_path(:gender_id => 1) %></li>
+        <li><%= link_to "Categories", store_category_view_path %></li>
+        <li><%= link_to "Boys", :controller => "store", :action => "index", :gender => 1 %></li>
+        <li><%= link_to "Girls", :controller => "store", :action => "index", :gender => 2 %></li>
         <% if logged_in? %>
           <% if current_user.admin %>
               <li><%= link_to "Products", products_path %></li>
@@ -45,7 +47,15 @@
         <% end %>
     </ul>
   </div>
-
+  <div id="search_form">
+    <% form_tag store_path, :method => 'get' do %>
+        <p>
+          <%= collection_select(:gender, :id, Gender.either, :id, :gender, options={ :include_blank => "(All)"}, html_options={:name=>'gender'}) %>
+          <%=  text_field_tag :search_query, params[:search_query] %>
+          <%=  submit_tag "Find Products", :name => nil, :class => "button" %>
+        </p>
+    <% end %>
+  </div>
 
 
   <%= yield %>
