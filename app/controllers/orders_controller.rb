@@ -86,7 +86,10 @@ class OrdersController < ApplicationController
         UserMailer.order_confirmation(current_user, @order).deliver
 
         # Remove the items purchased from the stock_items
-        StockItem.picker!(@order)
+        @order.line_items.each do |line_item|
+          StockItem.pick!(line_item)
+        end
+
 
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil

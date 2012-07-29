@@ -16,7 +16,6 @@ class StockItemsController < ApplicationController
 
   # @author Brian O'Sullivan 11114835
   def index
-    #@stock_items = StockItem.all(:order => 'product_id, size_id')
     @stock_items = StockItem.sorted.for_product(params[:product])
     respond_to do |format|
       format.html # index.html.erb
@@ -28,7 +27,6 @@ class StockItemsController < ApplicationController
   # GET /stock_items/1.xml
   def show
     @stock_item = StockItem.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @stock_item }
@@ -67,8 +65,14 @@ class StockItemsController < ApplicationController
   # POST /stock_items
   # POST /stock_items.xml
   def create
+    # Make available size data to associate with stock_item via dropdown menu in form
+    @sizes = Size.all
+    # Make available product data to associate with stock_item via dropdown menu in form
+    @products = Product.where("active='t'")
+
     @stock_item = StockItem.new(params[:stock_item])
-    @stock_item
+
+
     respond_to do |format|
       if @stock_item.save
         format.html { redirect_to(stock_items_url, :notice => 'Stock item was successfully created.') }
@@ -83,6 +87,11 @@ class StockItemsController < ApplicationController
   # PUT /stock_items/1
   # PUT /stock_items/1.xml
   def update
+    # Make available size data to associate with stock_item via dropdown menu in form
+    @sizes = Size.all
+    # Make available product data to associate with stock_item via dropdown menu in form
+    @products = Product.where("active='t'")
+
     @stock_item = StockItem.find(params[:id])
 
     respond_to do |format|

@@ -31,7 +31,6 @@
         <% if logged_in? %>
           <li><%= link_to "Your Orders", orders_path %></li>
           <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>
-          <li><%= link_to "Your Profile", current_user %></li>
           <li><%= link_to "Logout", logout_path %></li>
         <% else %>
               <li><%= link_to "Register", new_user_path %></li>
