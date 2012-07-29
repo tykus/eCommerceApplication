@@ -7,6 +7,6 @@
         <%= link_to image_tag(product.photo.url(:store)), :controller => "store", :action => "show", :id => product.id %>
       </div>
       <h3><%= truncate(sanitize(product.product_name), :length => 20) %></h3>
-      <p class='item_price'><%= number_to_currency(product.unit_price, :unit=>'&euro;') %></p>
+      <p class='item_price'>Price: <%= number_to_currency(product.unit_price, :unit=>'&euro;') %></p>
     </div>
 <% end %>

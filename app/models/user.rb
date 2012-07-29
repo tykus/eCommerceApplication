@@ -1,3 +1,15 @@
+#
+# user.rb
+#
+# Version 1
+#
+# 21/07/2012
+#
+# @author Ayotunde Odusanya
+#
+# @reference LaptopShop Tutorial
+#
+
 class User < ActiveRecord::Base
   has_many :products
   has_many :orders
@@ -13,7 +25,7 @@ class User < ActiveRecord::Base
 
   validates :password,
             :confirmation => true,
-            :length => {:within => 4..20},
+            :length => {:within => 6..20},
             :presence => true
 
 

@@ -1,3 +1,15 @@
+#
+# carts_controller.rb
+#
+# Version 2
+#
+# 25/07/2012
+#
+# @author Ayotunde Odusanya
+# @author Brian O'Sullivan 11114835
+#
+# @reference LabtopShop tutorial 3
+
 class CartsController < ApplicationController
   skip_before_filter :is_admin, :except => 'index'
 
@@ -5,9 +17,8 @@ class CartsController < ApplicationController
   # @reference: http://jonathanhui.com/ruby-rails-3-view
   layout "store"
 
-  # GET /carts/1
-  # GET /carts/1.xml
   def show
+    #@cart = Cart.owner(current_user.id).cart_id(params[:id])
     @cart = Cart.find(params[:id])
     unless @cart.line_items.empty?
       respond_to do |format|
@@ -17,12 +28,7 @@ class CartsController < ApplicationController
     end
   end
 
-  #
-  # Module: your_cart
-  # @reference: laptop_shop 2 tutorial
-  #
-
-
+  # @reference: laptop_shop 3 tutorial
   def your_cart
     redirect_to :action => "show", :id => current_cart.id
   end
@@ -48,7 +54,6 @@ class CartsController < ApplicationController
   # POST /carts.xml
   def create
     @cart = current_user.carts.new(params[:cart])
-
     respond_to do |format|
       if @cart.save
         format.html { redirect_to(@cart, :notice => 'Cart was successfully created.') }

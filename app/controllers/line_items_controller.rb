@@ -1,3 +1,14 @@
+#
+# line_items_controller.rb
+#
+# Version 1
+#
+# 21/07/2012
+#
+# @author Ayotunde Odusanya
+#
+# @reference LaptopShop Tutorial
+#
 class LineItemsController < ApplicationController
   skip_before_filter :is_admin
 
@@ -42,6 +53,8 @@ class LineItemsController < ApplicationController
 
   # POST /line_items
   # POST /line_items.xml
+
+  #@reference LaptopShop Tutorial
   def create
     @cart = current_cart
     stock_item = StockItem.find(params[:stock_item][:id])
@@ -61,24 +74,23 @@ class LineItemsController < ApplicationController
 
   # PUT /line_items/1
   # PUT /line_items/1.xml
+
+  #@author Brian O'Sullivan 11114835
   def update
     @line_item = LineItem.find(params[:id])
     respond_to do |format|
       if @line_item.update_attributes!(params[:line_item])
-
         # Destroy line_item if the quantity in the cart is 0
         if params[:line_item][:quantity] == "0"
           @line_item.destroy
-          redirect_to(your_cart_url)
+          format.html {redirect_to(current_cart, :notice => 'Line item was deleted.') }
         else
-
-
           format.html { redirect_to(current_cart, :notice => 'Line item was successfully updated.') }
           format.xml  { head :ok }
         end
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @line_item.errors, :status => :unprocessable_entity }
+          format.html { render :action => "edit" }
+          format.xml  { render :xml => @line_item.errors, :status => :unprocessable_entity }
       end
     end
   end

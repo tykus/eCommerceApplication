@@ -6,6 +6,7 @@
 <table>
   <tr>
     <th class='left'>Product Name</th>
+    <th>Size</th>
     <th>Quantity Ordered</th>
     <th class='right'>Unit Price</th>
     <th class='right'>Total Price</th>
@@ -13,6 +14,7 @@
 <% @line_items.each do |line_item| %>
     <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
       <td><%= line_item.stock_item.product.product_name %></td>
+      <td class='center'><%= line_item.stock_item.size.description %></td>
       <td class='center'><%= line_item.quantity %></td>
       <td class='right'><%= number_to_currency(line_item.stock_item.product.unit_price, :unit => '&euro;') %></td>
       <td class='right'><%= number_to_currency(line_item.subtotal, :unit => '&euro;') %></td>

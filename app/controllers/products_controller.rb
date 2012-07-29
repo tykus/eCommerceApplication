@@ -1,3 +1,15 @@
+#
+# products_controller.rb
+#
+# Version 2
+#
+# 27/07/2012
+#
+# @author Brian O'Sullivan 11114835
+#
+# @reference LaptopShop Tutorial - Part 1
+#
+
 class ProductsController < ApplicationController
 
   # GET /products
@@ -39,20 +51,21 @@ class ProductsController < ApplicationController
     end
   end
 
-  # GET /products/1/edit
+  # @author Brian O'Sullivan 11114835
   def edit
     @product = Product.find(params[:id])
-
     # Make available a collection of category object for collection_select form field
     @categories = Category.all
     # Make available a collection of gender object for collection_select form field
     @genders = Gender.all
   end
 
-  # POST /products
-  # POST /products.xml
+  # @author Brian O'Sullivan 11114835
   def create
-     @product = current_user.products.new(params[:product])
+    @categories = Category.all
+    @genders = Gender.all
+
+    @product = current_user.products.new(params[:product])
     respond_to do |format|
       if @product.save
         format.html { redirect_to(@product, :notice => 'Product was successfully created.') }

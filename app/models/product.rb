@@ -8,8 +8,8 @@
 # @author Brian O'Sullivan 11114835
 #
 # @reference LaptopShop Tutorial - Part 1
+# @reference   http://zachholman.com/2010/01/simplifying-rails-controllers-with-named_scopes/
 #
-
 
 class Product < ActiveRecord::Base
   belongs_to :category
@@ -27,10 +27,9 @@ class Product < ActiveRecord::Base
   scope :with_gender, lambda {|gender| gender.present? ? {:conditions => [ "gender_id IN (?,3)", gender ] }:{} }
   scope :with_category, lambda {|category| category.present? ? {:conditions => { :category_id => category } }:{} }
   scope :with_query, lambda {|query| query.present? ? {:conditions => ['product_name LIKE ?', "%#{query}%"] }:{} }
- # scope :with_size, lambda {|size| size.present}
-
   scope :is_active, :conditions => { :active => true }
-
+  scope :in_size, lambda {|size| size.present? ? joins("join stock_items on stock_items.product_id = products.id").where("size_id = ?", size):{}}
+  #SELECT * FROM products JOIN stock_items ON stock_items.product_id = products.id WHERE stock_items.size_id = 1;
 
 
   # Paperclip photo attributes
@@ -40,7 +39,12 @@ class Product < ActiveRecord::Base
                                  :large => "400x400#" }
 
   # Ensure that the product is created with a product_name
-  validates :product_name, :presence => true
+  validates :product_name,
+            :presence => true
+
+  # Ensure that the product is created with a photo
+  validates :photo,
+            :presence => true
 
   # Ensure that every product has a valid price, i.e. > 0.00
   validates :unit_price,

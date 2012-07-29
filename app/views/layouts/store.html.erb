@@ -29,17 +29,9 @@
         <li><%= link_to "Boys", :controller => "store", :action => "index", :gender => 1 %></li>
         <li><%= link_to "Girls", :controller => "store", :action => "index", :gender => 2 %></li>
         <% if logged_in? %>
-          <% if current_user.admin %>
-              <li><%= link_to "Products", products_path %></li>
-              <li><%= link_to "Categories", categories_path %></li>
-              <li><%= link_to "Stock", stock_items_path %></li>
-              <li><%= link_to "Orders", orders_path %></li>
-              <li><%= link_to "Users", users_path %></li>
-          <% elsif !current_user.admin? %>
-              <li><%= link_to "Orders", orders_path %></li>
-              <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>
-              <li><%= link_to "Profile", current_user %></li>
-          <% end %>
+          <li><%= link_to "Your Orders", orders_path %></li>
+          <li><%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %></li>
+          <li><%= link_to "Your Profile", current_user %></li>
           <li><%= link_to "Logout", logout_path %></li>
         <% else %>
               <li><%= link_to "Register", new_user_path %></li>
@@ -50,7 +42,9 @@
   <div id="search_form">
     <% form_tag store_path, :method => 'get' do %>
         <p>
-          <%= collection_select(:gender, :id, Gender.either, :id, :gender, options={ :include_blank => "(All)"}, html_options={:name=>'gender'}) %>
+          <%= collection_select(:category, :id, Category.all, :id, :category_name, options={ :include_blank => "Category"}, html_options={:name=>'category'}) %>
+          <%= collection_select(:gender, :id, Gender.either, :id, :gender, options={ :include_blank => "Gender"}, html_options={:name=>'gender'}) %>
+          <%= collection_select(:size, :id, Size.all, :id, :description, options={ :include_blank => "Size"}, html_options={:name=>'size'}) %>
           <%=  text_field_tag :search_query, params[:search_query] %>
           <%=  submit_tag "Find Products", :name => nil, :class => "button" %>
         </p>

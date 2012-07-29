@@ -1,10 +1,20 @@
+#
+# cart.rb
+#
+# Version 1
+#
+# 27/07/2012
+#
+# @author Brian O'Sullivan 11114835
+# @author Ayotunde Odusanya
+#
+# @reference LaptopShop tutorial 3
+
 class Cart < ActiveRecord::Base
   belongs_to :user
   has_many :line_items, :dependent => :destroy
 
-  # calculate total price for products in cart
   # @reference: laptop_shop tutorial 3
-
   def add_product(stock_item)
     current_item = line_items.where(:stock_item_id => stock_item.id).first
     if current_item
@@ -16,9 +26,7 @@ class Cart < ActiveRecord::Base
     current_item
   end
 
-  # calculate total price for products in cart
   # @reference: laptop_shop tutorial 4
-
   def total_price
 
     total=0
@@ -28,10 +36,7 @@ class Cart < ActiveRecord::Base
     total
   end
 
-  #
-  # count of products in cart
   # @author Brian O'Sullivan
-  #
   def count
     count = 0
     line_items.each do |line_item|

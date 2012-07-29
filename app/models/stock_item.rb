@@ -1,3 +1,15 @@
+#
+# stock_item.rb
+#
+# Version 1
+#
+# 27/07/2012
+#
+# @author Brian O'Sullivan 11114835
+#
+# @reference http://railscasts.com/episodes/47-two-many-to-many/
+#
+
 class StockItem < ActiveRecord::Base
   # Associative relationship with product and size models
   belongs_to :product
@@ -5,7 +17,14 @@ class StockItem < ActiveRecord::Base
 
   has_many :line_items
 
-  # Validation
+  scope :sorted, :order => "product_id, size_id"
+  scope :for_product, lambda {|product| product.present? ? {:conditions => {:product_id => product }} :{}}
+  scope :in_stock, :conditions => [ "quantity_in_stock > 0" ]
+
+
+
+  # VALIDATION CRITERIA
+
   # Ensure that the product_id and size_id are present
   validates :product_id,
             :size_id,

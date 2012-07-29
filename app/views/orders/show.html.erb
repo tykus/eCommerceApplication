@@ -1,8 +1,10 @@
 <h2>Details for Order # <%= @order.id %></h2>
+<%= @order.user.email %>
 <table>
   <tr>
     <th></th>
     <th>Product Name</th>
+    <th>Size</th>
     <th>Quantity</th>
     <th>Unit Price</th>
     <th>Total Price</th>
@@ -13,6 +15,7 @@
       <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
           <td><%= image_tag(line_item.stock_item.product.photo.url(:small)) %></td>
           <td><%= line_item.stock_item.product.product_name %></td>
+          <td class='center'><%= line_item.stock_item.size.description %></td>
           <td class='center'><%= line_item.quantity %></td>
           <td class='right'><%= number_to_currency(line_item.stock_item.product.unit_price, :unit=>'&euro;') %></td>
           <td class='right'><%= number_to_currency(line_item.subtotal, :unit=>'&euro;') %></td>
@@ -21,6 +24,7 @@
 
 
   <tr class='total'>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>

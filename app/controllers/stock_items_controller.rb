@@ -1,9 +1,23 @@
+#
+# stock_items_controller.rb
+#
+# Version 1
+#
+# 27/07/2012
+#
+# @author Brian O'Sullivan 11114835
+#
+# @reference http://railscasts.com/episodes/47-two-many-to-many/
+#
+
 class StockItemsController < ApplicationController
   # GET /stock_items
   # GET /stock_items.xml
-  def index
-    @stock_items = StockItem.all(:order => 'product_id, size_id')
 
+  # @author Brian O'Sullivan 11114835
+  def index
+    #@stock_items = StockItem.all(:order => 'product_id, size_id')
+    @stock_items = StockItem.sorted.for_product(params[:product])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @stock_items }

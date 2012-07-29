@@ -2,36 +2,32 @@
 
 <%  if @product.photo.exists? then %>
     <%= image_tag(@product.photo.url, :class => 'showProduct') %>
-<% else %>
-    <%= # display the current seed image attached to the product
-        image_tag(@product.picture, :class => 'showProduct', :alt => 'Current Image', :title => 'Current Image')
-    %>
 <% end %>
 
 <h1><%= @product.product_name %></h1>
 
-    <h4>Description</h4>
-    <p><%= @product.description %></p>
+<h4>Description</h4>
+<p><%= @product.description %></p>
 
-    <h4>Category</h4>
-    <p><%= @product.category.try(:category_name) %></p>
+<h4>Category</h4>
+<p><%= @product.category.try(:category_name) %></p>
 
-    <h4>Unit Price</h4>
-    <p><%= number_to_currency(@product.unit_price, :unit=>'&euro;') %></p>
+<h4>Unit Price</h4>
+<p><%= number_to_currency(@product.unit_price, :unit=>'&euro;') %></p>
 
-    <h4>Colour</h4>
-    <p> <%= @product.colour %></p>
+<h4>Colour</h4>
+<p> <%= @product.colour %></p>
 
-    <h4>Gender</h4>
-    <p><%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %></p>
+<h4>Gender</h4>
+<p><%= image_tag(@product.gender.icon_url, :alt => @product.gender.gender, :title => @product.gender.gender, :class => 'icon') %></p>
 
-    <h4>Active</h4>
-    <p><%=  @product.active %></p>
+<h4>Active</h4>
+<p><%=  @product.active %></p>
 
 
 <table class="nav_icons">
   <tr>
-    <td><%= link_to image_tag('icons/stock.png', :alt => "Stock", :title => "Stock"), stock_items_path %></td>
+    <td><%= link_to image_tag('icons/stock.png', :alt => "Stock", :title => "Stock"), {:controller => "stock_items", :action => "index", :product => @product.id } %></td>
     <td><%= link_to image_tag('icons/back.png', :alt => "Back", :title => "Back"), products_path %></td>
     <td><%= link_to image_tag('icons/edit.png', :alt => "Edit", :title => "Edit"), edit_product_path(@product) %></td>
     <td><%= link_to image_tag('icons/delete.png', :alt => 'Delete', :title => 'Delete Product'), @product, :confirm => 'Are you sure you want to delete this product?', :method => :delete %></td>

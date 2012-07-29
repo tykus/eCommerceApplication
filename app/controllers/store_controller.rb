@@ -17,12 +17,19 @@ class StoreController < ApplicationController
 
   # @author Brian O'Sullivan 11114835
   def index
-    @products = Product.with_query(params[:search_query]).with_gender(params[:gender]).with_category(params[:category]).is_active
+    @products = Product.with_query(params[:search_query]).
+                        with_gender(params[:gender]).
+                        with_category(params[:category]).
+                        in_size(params[:size]).
+                        is_active
   end
 
   def show
     # Return only active products
     @product = Product.where("active=? AND id=?", true, params[:id]).first  # <<<< this is returning an object
+
+    # Form for new line_item
+    @line_item = LineItem.new
 
     if @product
       # Returns the stock_item_id's available for current product

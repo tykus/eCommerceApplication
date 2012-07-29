@@ -34,7 +34,7 @@
 
 <h4>Sizes Available</h4>
 <% if logged_in? %>
-  <% form_for LineItem.new do |f| %>
+  <% form_for @line_item do |f| %>
       <%= select(:stock_item, :id, @stocks.map{|s| [s.size.description, s.id]}) %>
       <%= f.submit "Add to Cart", :class => 'button' %>
   <% end %>

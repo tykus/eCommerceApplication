@@ -12,6 +12,10 @@
 class UsersController < ApplicationController
   skip_before_filter :is_admin, :except => 'index'
 
+  #layout "store", :only => [:new]
+  #layout "application", :only => [:index]
+  layout :layout_choice
+
   # @reference LaptopShop Tutorial - Part 2
   def new
     @user = User.new
@@ -19,6 +23,7 @@ class UsersController < ApplicationController
 
   # @reference LaptopShop Tutorial - Part 2
   def create
+
     @user = User.new(params[:user])
     if @user.save
       UserMailer.registration_confirmation(@user).deliver
@@ -34,15 +39,16 @@ class UsersController < ApplicationController
   end
 
 
-  def show
-    @user = User.find(current_user.id)
+  private
+
+  # @reference http://guides.rubyonrails.org/layouts_and_rendering.html
+    def layout_choice
+    if params[:action] == 'new'
+      'store'
+    else
+      'application'
+    end
   end
-
-  def edit
-    @user = User.find(current_user.id)
-  end
-
-
 end
 
 

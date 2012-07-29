@@ -57,11 +57,10 @@ class OrdersController < ApplicationController
       return
     end
 
+    # Get the line_items in the current cart to display on checkout page
     @line_items = current_cart.line_items
 
     @order = Order.new
-
-
 
     respond_to do |format|
       format.html # new.html.erb
